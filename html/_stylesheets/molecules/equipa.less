@@ -1,0 +1,71 @@
+.equipa{
+	padding-top: 90px;
+	padding-bottom:30px;
+	font-family: fontDyane, "Ubuntu", Light;
+
+
+	.equipa-detail{
+		color: black;
+		border: 1px solid black;
+		text-align: center;
+		padding: 25px;
+		margin-bottom: 60px;
+		margin-top: 60px;
+		margin-right: 0; 
+
+		h1{
+			font-size: 22px;
+			line-height: 22px;
+			margin-top:40px;
+			margin-bottom: 0;
+
+
+
+			&::before{
+				content: '';
+				height: 110px;
+				background-color: white;
+				background-position: center;
+				width: 230px;
+				position: absolute;
+				top: 10px;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
+
+			&::after{
+				content: '';
+				width: 130px;
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				background: url(../_images/equipa/secretaria.png) no-repeat;
+				height: 130px;
+				border-radius: 50%;
+				background-size: 130px 130px;
+				background-position: center;
+			}
+		}
+
+		hr{
+			width: 50px;
+			border-bottom: 1px solid #6f6a6a;
+			margin: 22px auto;
+
+		}
+
+
+
+		p{
+			text-transform: uppercase;
+			font-size: 20px;
+			font-weight: lighter;
+			color: #6f6a6a;
+		}
+
+
+	}
+}

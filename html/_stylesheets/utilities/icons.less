@@ -1,0 +1,238 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@facebookicon-name: 'facebookicon';
+@facebookicon-x: 481px;
+@facebookicon-y: 282px;
+@facebookicon-offset-x: -481px;
+@facebookicon-offset-y: -282px;
+@facebookicon-width: 30px;
+@facebookicon-height: 31px;
+@facebookicon-total-width: 541px;
+@facebookicon-total-height: 328px;
+@facebookicon-image: '../../images/icons.png';
+@facebookicon: 481px 282px -481px -282px 30px 31px 541px 328px '../../images/icons.png' 'facebookicon';
+@googleicon-name: 'googleicon';
+@googleicon-x: 481px;
+@googleicon-y: 178px;
+@googleicon-offset-x: -481px;
+@googleicon-offset-y: -178px;
+@googleicon-width: 31px;
+@googleicon-height: 31px;
+@googleicon-total-width: 541px;
+@googleicon-total-height: 328px;
+@googleicon-image: '../../images/icons.png';
+@googleicon: 481px 178px -481px -178px 31px 31px 541px 328px '../../images/icons.png' 'googleicon';
+@heart1-name: 'heart1';
+@heart1-x: 0px;
+@heart1-y: 0px;
+@heart1-offset-x: 0px;
+@heart1-offset-y: 0px;
+@heart1-width: 180px;
+@heart1-height: 215px;
+@heart1-total-width: 541px;
+@heart1-total-height: 328px;
+@heart1-image: '../../images/icons.png';
+@heart1: 0px 0px 0px 0px 180px 215px 541px 328px '../../images/icons.png' 'heart1';
+@heart2-name: 'heart2';
+@heart2-x: 180px;
+@heart2-y: 0px;
+@heart2-offset-x: -180px;
+@heart2-offset-y: 0px;
+@heart2-width: 180px;
+@heart2-height: 215px;
+@heart2-total-width: 541px;
+@heart2-total-height: 328px;
+@heart2-image: '../../images/icons.png';
+@heart2: 180px 0px -180px 0px 180px 215px 541px 328px '../../images/icons.png' 'heart2';
+@heart3-name: 'heart3';
+@heart3-x: 360px;
+@heart3-y: 113px;
+@heart3-offset-x: -360px;
+@heart3-offset-y: -113px;
+@heart3-width: 121px;
+@heart3-height: 107px;
+@heart3-total-width: 541px;
+@heart3-total-height: 328px;
+@heart3-image: '../../images/icons.png';
+@heart3: 360px 113px -360px -113px 121px 107px 541px 328px '../../images/icons.png' 'heart3';
+@heart4-name: 'heart4';
+@heart4-x: 360px;
+@heart4-y: 220px;
+@heart4-offset-x: -360px;
+@heart4-offset-y: -220px;
+@heart4-width: 121px;
+@heart4-height: 107px;
+@heart4-total-width: 541px;
+@heart4-total-height: 328px;
+@heart4-image: '../../images/icons.png';
+@heart4: 360px 220px -360px -220px 121px 107px 541px 328px '../../images/icons.png' 'heart4';
+@heart5-name: 'heart5';
+@heart5-x: 181px;
+@heart5-y: 215px;
+@heart5-offset-x: -181px;
+@heart5-offset-y: -215px;
+@heart5-width: 121px;
+@heart5-height: 107px;
+@heart5-total-width: 541px;
+@heart5-total-height: 328px;
+@heart5-image: '../../images/icons.png';
+@heart5: 181px 215px -181px -215px 121px 107px 541px 328px '../../images/icons.png' 'heart5';
+@heart6-name: 'heart6';
+@heart6-x: 0px;
+@heart6-y: 215px;
+@heart6-offset-x: 0px;
+@heart6-offset-y: -215px;
+@heart6-width: 181px;
+@heart6-height: 113px;
+@heart6-total-width: 541px;
+@heart6-total-height: 328px;
+@heart6-image: '../../images/icons.png';
+@heart6: 0px 215px 0px -215px 181px 113px 541px 328px '../../images/icons.png' 'heart6';
+@heart7-name: 'heart7';
+@heart7-x: 360px;
+@heart7-y: 0px;
+@heart7-offset-x: -360px;
+@heart7-offset-y: 0px;
+@heart7-width: 181px;
+@heart7-height: 113px;
+@heart7-total-width: 541px;
+@heart7-total-height: 328px;
+@heart7-image: '../../images/icons.png';
+@heart7: 360px 0px -360px 0px 181px 113px 541px 328px '../../images/icons.png' 'heart7';
+@heartred-name: 'heartred';
+@heartred-x: 514px;
+@heartred-y: 113px;
+@heartred-offset-x: -514px;
+@heartred-offset-y: -113px;
+@heartred-width: 21px;
+@heartred-height: 19px;
+@heartred-total-width: 541px;
+@heartred-total-height: 328px;
+@heartred-image: '../../images/icons.png';
+@heartred: 514px 113px -514px -113px 21px 19px 541px 328px '../../images/icons.png' 'heartred';
+@ico-adicionar-name: 'ico-adicionar';
+@ico-adicionar-x: 481px;
+@ico-adicionar-y: 113px;
+@ico-adicionar-offset-x: -481px;
+@ico-adicionar-offset-y: -113px;
+@ico-adicionar-width: 33px;
+@ico-adicionar-height: 34px;
+@ico-adicionar-total-width: 541px;
+@ico-adicionar-total-height: 328px;
+@ico-adicionar-image: '../../images/icons.png';
+@ico-adicionar: 481px 113px -481px -113px 33px 34px 541px 328px '../../images/icons.png' 'ico-adicionar';
+@ico-cancelar-name: 'ico-cancelar';
+@ico-cancelar-x: 514px;
+@ico-cancelar-y: 132px;
+@ico-cancelar-offset-x: -514px;
+@ico-cancelar-offset-y: -132px;
+@ico-cancelar-width: 12px;
+@ico-cancelar-height: 12px;
+@ico-cancelar-total-width: 541px;
+@ico-cancelar-total-height: 328px;
+@ico-cancelar-image: '../../images/icons.png';
+@ico-cancelar: 514px 132px -514px -132px 12px 12px 541px 328px '../../images/icons.png' 'ico-cancelar';
+@instagramicon-name: 'instagramicon';
+@instagramicon-x: 481px;
+@instagramicon-y: 251px;
+@instagramicon-offset-x: -481px;
+@instagramicon-offset-y: -251px;
+@instagramicon-width: 31px;
+@instagramicon-height: 31px;
+@instagramicon-total-width: 541px;
+@instagramicon-total-height: 328px;
+@instagramicon-image: '../../images/icons.png';
+@instagramicon: 481px 251px -481px -251px 31px 31px 541px 328px '../../images/icons.png' 'instagramicon';
+@pinteresticon-name: 'pinteresticon';
+@pinteresticon-x: 481px;
+@pinteresticon-y: 147px;
+@pinteresticon-offset-x: -481px;
+@pinteresticon-offset-y: -147px;
+@pinteresticon-width: 32px;
+@pinteresticon-height: 31px;
+@pinteresticon-total-width: 541px;
+@pinteresticon-total-height: 328px;
+@pinteresticon-image: '../../images/icons.png';
+@pinteresticon: 481px 147px -481px -147px 32px 31px 541px 328px '../../images/icons.png' 'pinteresticon';
+@youtubeicon-name: 'youtubeicon';
+@youtubeicon-x: 481px;
+@youtubeicon-y: 220px;
+@youtubeicon-offset-x: -481px;
+@youtubeicon-offset-y: -220px;
+@youtubeicon-width: 31px;
+@youtubeicon-height: 31px;
+@youtubeicon-total-width: 541px;
+@youtubeicon-total-height: 328px;
+@youtubeicon-image: '../../images/icons.png';
+@youtubeicon: 481px 220px -481px -220px 31px 31px 541px 328px '../../images/icons.png' 'youtubeicon';
+@spritesheet-width: 541px;
+@spritesheet-height: 328px;
+@spritesheet-image: '../../images/icons.png';
+@spritesheet-sprites: @facebookicon @googleicon @heart1 @heart2 @heart3 @heart4 @heart5 @heart6 @heart7 @heartred @ico-adicionar @ico-cancelar @instagramicon @pinteresticon @youtubeicon;
+@spritesheet: 541px 328px '../../images/icons.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
