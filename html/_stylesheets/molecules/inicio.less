@@ -2,12 +2,9 @@
 	padding-top: 40px;
 	padding-bottom:80px;
 	font-family: fontDyane, "Ubuntu", Light;
-	background-color:#e1e1e1;
+	background-color:white;
 	.container{
 		.row{
-
-
-
 
 			div{
 
@@ -24,60 +21,113 @@
 							border-radius: 13%;
 							margin-bottom: 80px;
 
-							
+
 						}
 					}
 				}
-				
+
 			}
 
 			.inicio{
-				min-width: 350px;
-				min-height: 280px;
-				border-left: 4px solid white;
-				border-right: 4px solid white;
-				border-bottom-right-radius: 100%;
-				border-bottom-left-radius: 100%;
-				
 
-				form{
-					
-					
-					padding-top: 40px;
-
-					margin-bottom: 10px;
-				}
-
-				input{
-					height: 30px;
-					display: block;
-					margin:0 auto;
-					margin-bottom: 15px;
-					border: 1px solid black;
-
-				}
-
-				button{
-					display: block;
-					margin: 0 auto;
-				}
+				border-right: 1px solid black;
 
 				p{
-					width: 180px;
-					margin: 0 auto;
-					padding-top: 10px;
-					margin-bottom: 5px;
-					font-size: 11px;
-					line-height: 15px;
-					font-weight: lighter;
+					&:last-of-type{
+						width: 180px;
+						margin: 0 auto;
+						padding-top: 5px;
+						margin-bottom: 5px;
+						font-size: 11px;
+						line-height: 15px;
+						font-weight: lighter;
+						text-align: center;
+						color: black;
+						padding-bottom: 5px;
+						border-top: 3px dotted black;
+					}
+				}
+
+				form{
+					margin: 0;
+					margin-top: 10px;
 					text-align: center;
-					color: black;
-					padding-bottom: 5px;
-					border-top: 3px dotted white;
+
+					button{
+						font-family: fontDyane, "Ubuntu", Light;
+						font-size: 15px;
+						border: 1px solid black;
+						background-color: black;
+						color: white;
+						width: 100px;
+						height: 40px;
+						letter-spacing: 2px;
+						margin-top: 20px;
+						margin-bottom: 20px;
+					}
+				}
+
+				.inicio-detail{
+					display: block;
+					margin: 0;
+					padding-top: 50px;
+					padding-bottom: 0px;
+					text-align: center;
+
+					input{
+						display: inline-block;
+						margin: 0 auto;
+						height: 40px;
+						width: 320px;
+						border-left: 1px solid black;
+						border-bottom: 0;
+						border-top: 0;
+						border-right: 0;
+						padding: 10px;
+						border-radius: 0;
+						margin-left: 36px;
+						font-family: fontDyane, "Ubuntu", Light;
+						color:black;
+						font-weight: lighter;
+						line-height: 20px;
+						font-size: 16px;
+						width: 365px;
+					}
+
+					p{
+						border: 1px solid black;
+						height: 42px;
+						margin: 0;
+						display: inline-block;
+						text-align: left;
+						padding-left: 36px;
+						font-family: fontDyane, "Ubuntu", Light;
+						color:black;
+						font-weight: lighter;
+						line-height: 20px;
+						font-size: 18px;
+						width:500px;
+						padding-top:0;
+						padding-bottom: 0;
+					}
+
+					&:nth-of-type(2){
+						input{
+							width: 377px;
+							margin-left: 20px;
+
+						}
+
+						p{
+							padding-left: 20px;
+							text-align: left;
+						}
+					}
 				}
 
 				.connect{
-
+					text-align: center;
+					padding-bottom: 20px;
 					ul{
 						margin:0 auto;
 						list-style: none;
@@ -102,34 +152,218 @@
 							}
 						}
 					}					
-				}
+				}		
 			}
 
 			.registo{
-				padding-top: 40px;
-				margin-bottom: 10px;
-				min-width: 350px;
-				min-height: 280px;
-				border-left: 4px solid white;
-				border-right: 4px solid white;
-				border-bottom-right-radius: 100%;
-				border-bottom-left-radius: 100%;
-				input{
-					height: 30px;
-					display: block;
-					margin:0 auto;
-					margin-bottom: 15px;
-					font-size: 14px;
-					border: 1px solid black;
+				form{
+					margin: 0;
+					margin-top: 10px;
+					text-align: center;
+
+					button{
+						font-family: fontDyane, "Ubuntu", Light;
+						font-size: 15px;
+						border: 1px solid black;
+						background-color: black;
+						color: white;
+						width: 100px;
+						height: 40px;
+						letter-spacing: 2px;
+						margin-top: 20px;
+						margin-bottom: 20px;
+					}
 				}
 
-				button{
+				.registo-detail{
 					display: block;
-					margin: 0 auto;
-				}
+					margin: 0;
+					padding-top: 50px;
+					padding-bottom: 0px;
+					text-align: center;
 
+					input{
+						display: inline-block;
+						margin: 0 auto;
+						height: 40px;
+						width: 320px;
+						border-left: 1px solid black;
+						border-bottom: 0;
+						border-top: 0;
+						border-right: 0;
+						padding: 10px;
+						border-radius: 0;
+						margin-left: 43px;
+						font-family: fontDyane, "Ubuntu", Light;
+						color:black;
+						font-weight: lighter;
+						line-height: 20px;
+						font-size: 16px;
+						width:360px;
+
+
+					}
+
+					p{
+						border: 1px solid black;
+						height: 42px;
+						margin: 0;
+						display: inline-block;
+						text-align: center;
+						padding-left: 42px;
+						font-family: fontDyane, "Ubuntu", Light;
+						color: black;
+						font-weight: lighter;
+						line-height: 20px;
+						font-size: 18px;
+						width: 390px;
+						padding-top: 0;
+						padding-bottom: 0;
+					}
+				}
 			}
 
 		}
+
 	}
 }
+
+// .row{
+
+
+
+
+// 			div{
+
+// 				&:first-of-type{
+// 					text-align: center;
+// 					a{
+// 						img{
+// 							width: 100%;
+// 							max-width: 300px;
+// 							margin: 0 auto;
+// 							padding-top: 10px;
+// 							padding-bottom: 8px;
+// 							border-bottom: 4px solid white;
+// 							border-radius: 13%;
+// 							margin-bottom: 80px;
+
+
+// 						}
+// 					}
+// 				}
+
+// 			}
+
+// 			.inicio{
+// 				min-width: 350px;
+// 				min-height: 280px;
+// 				border-left: 4px solid white;
+// 				border-right: 4px solid white;
+// 				border-bottom-right-radius: 100%;
+// 				border-bottom-left-radius: 100%;
+
+
+// 				form{
+
+
+// 					padding-top: 40px;
+
+// 					margin-bottom: 10px;
+// 				}
+
+// 				input{
+// 					height: 30px;
+// 					display: block;
+// 					margin:0 auto;
+// 					margin-bottom: 15px;
+// 					border: 1px solid black;
+
+// 				}
+
+// 				button{
+// 					font-family: fontDyane, "Ubuntu", Light;
+// 					font-size: 15px;
+// 					border: 1px solid black;
+// 					background-color: black;
+// 					color: white;
+// 					width: 100px;
+// 					height: 40px;
+// 					letter-spacing: 2px;
+// 				}
+
+// 				p{
+// 					width: 180px;
+// 					margin: 0 auto;
+// 					padding-top: 10px;
+// 					margin-bottom: 5px;
+// 					font-size: 11px;
+// 					line-height: 15px;
+// 					font-weight: lighter;
+// 					text-align: center;
+// 					color: black;
+// 					padding-bottom: 5px;
+// 					border-top: 3px dotted white;
+// 				}
+
+// 				.connect{
+
+// 					ul{
+// 						margin:0 auto;
+// 						list-style: none;
+// 						li{
+// 							display: inline-block;
+// 							a{
+// 								img{
+
+// 									border: 0;
+// 									max-width: 30px;
+// 									width: 100%;
+// 									padding-top: 0;
+// 									padding-bottom: 0;
+// 									margin-bottom: 0;
+// 									border-radius: 0;
+
+// 									&:hover{
+// 										opacity:0.5;
+// 									}
+
+// 								}
+// 							}
+// 						}
+// 					}					
+// 				}
+// 			}
+
+// 			.registo{
+// 				padding-top: 40px;
+// 				margin-bottom: 10px;
+// 				min-width: 350px;
+// 				min-height: 280px;
+// 				border-left: 4px solid white;
+// 				border-right: 4px solid white;
+// 				border-bottom-right-radius: 100%;
+// 				border-bottom-left-radius: 100%;
+// 				input{
+// 					height: 30px;
+// 					display: block;
+// 					margin:0 auto;
+// 					margin-bottom: 15px;
+// 					font-size: 14px;
+// 					border: 1px solid black;
+// 				}
+
+// 				button{
+// 					font-family: fontDyane, "Ubuntu", Light;
+// 					font-size: 15px;
+// 					border: 1px solid black;
+// 					background-color: black;
+// 					color: white;
+// 					width: 100px;
+// 					height: 40px;
+// 					letter-spacing: 2px;
+// 				}
+
+// 			}
+
+// 		}

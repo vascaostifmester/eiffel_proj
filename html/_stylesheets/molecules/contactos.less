@@ -3,11 +3,33 @@
 	padding-bottom:80px;
 	font-family: fontDyane, "Ubuntu", Light;
 
+	.aviso{
+		text-align: center;
+		color: black;
+		padding-left: 180px;
+		padding-right: 180px;
+
+		p{
+			margin-bottom: 0;
+			font-weight: lighter;
+			color: black;
+			margin-bottom: 20px;
+			border-right: 0;
+			margin-right: 0;
+			padding-right:0;
+			font-size: 12px;
+			text-align: center;
+			display: block;
+			
+		}
+	}
+
 	.contact{
 		text-align: center;
 		color: black;
 		padding-left: 180px;
 		padding-right: 180px;
+		margin-top: 40px;
 
 		p{
 			display: inline-block;
@@ -18,16 +40,7 @@
 			font-size: 20px;
 			font-weight: lighter;
 			color: black;
-			margin-bottom: 20px;
 
-			&:last-of-type{
-				border-right: 0;
-				margin-right: 0;
-				padding-right:0;
-				font-size: 12px;
-				text-align: justify;
-				display: block;
-			}
 		}
 
 		a{
@@ -41,16 +54,98 @@
 
 	.user{
 
+		form{
+			margin: 0;
+			margin-top: 10px;
+		}
+
+		.user-detail{
+			display: block;
+			margin: 0;
+			padding-top: 50px;
+			padding-bottom: 0px;
+			text-align: center;
+
+			p{
+				border: 1px solid black;
+				height: 42px;
+				margin: 0;
+				display: inline-block;
+				text-align: center;
+				padding-left: 42px;
+				font-family: fontDyane, "Ubuntu", Light;
+				color:black;
+				font-weight: lighter;
+				line-height: 20px;
+				font-size: 18px;
+				width:500px;
+			}
+
+			input{
+				display: inline-block;
+				margin: 0 auto;
+				height: 40px;
+				width: 320px;
+				border-left: 1px solid black;
+				border-bottom: 0;
+				border-top: 0;
+				border-right: 0;
+				padding: 10px;
+				border-radius: 0;
+				margin-left: 43px;
+				font-family: fontDyane, "Ubuntu", Light;
+				color:black;
+				font-weight: lighter;
+				line-height: 20px;
+				font-size: 16px;
+				width:360px;
+
+				
+			}
+
+			&:nth-of-type(2){
+				p{
+					padding-left: 44px;
+				}
+
+				input{
+					width: 360px;
+					margin-left: 46px;
+				}
+			}
+
+			&:last-of-type{
+				p{
+					padding-left: 30px;
+				}
+
+				input{
+					width:360px;
+					margin-left: 30px;
+				}
+
+			}
+			
+		}
 	}
 
 	.message{
 		text-align: center;
+		margin-top: 20px;
 		textarea{
 			padding: 30px;
 			display: block;
 			width: 100%;
-			height: 350px;
+			height: 310px;
 			border: 1px solid black;
+			resize: none;
+			font-family: fontDyane, "Ubuntu", Light;
+			color: black;
+			font-weight: lighter;
+			line-height: 20px;
+			font-size: 16px;
+			margin-bottom: 20px;
+
 		}
 
 		h1{
@@ -59,7 +154,7 @@
 			font-weight: lighter;
 			font-size: 19px;
 			line-height: 19px;
-			top: -90px;
+			top: -77px;
 			left: 50%;
 			transform: translateX(-50%);
 			background-color: white;
@@ -67,6 +162,7 @@
 			width: 270px;
 			margin-bottom: 0;
 			text-transform: uppercase;
+			
 		}
 
 		button{
@@ -78,12 +174,6 @@
 			width: 100px;
 			height: 40px;
 			letter-spacing: 2px;
-
-			&:hover{
-				background-color: #e1e1e1;
-				color:black;
-				opacity: 0.8;
-			}
 		}
 	}
 }
