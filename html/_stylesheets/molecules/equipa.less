@@ -13,10 +13,25 @@
 		margin-top: 60px;
 		margin-right: 0; 
 
+		img{
+			content: '';
+			width: 125px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+			height: 121px;
+			border-radius: 50%;
+			background-size: 130px 130px;
+			background-position: center;
+			z-index: 1;
+		}
+
 		h1{
 			font-size: 22px;
 			line-height: 22px;
-			margin-top:40px;
+			margin-top:50px;
 			margin-bottom: 0;
 
 
@@ -32,21 +47,6 @@
 				left: 50%;
 				-webkit-transform: translateX(-50%);
 				transform: translateX(-50%);
-			}
-
-			&::after{
-				content: '';
-				width: 130px;
-				position: absolute;
-				top: -20px;
-				left: 50%;
-				-webkit-transform: translateX(-50%);
-				transform: translateX(-50%);
-				background: url(../_images/equipa/secretaria.png) no-repeat;
-				height: 130px;
-				border-radius: 50%;
-				background-size: 130px 130px;
-				background-position: center;
 			}
 		}
 
