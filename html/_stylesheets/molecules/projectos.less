@@ -9,26 +9,23 @@
 		text-align: center;
 		button{
 			font-family: fontDyane, "Ubuntu", Light;
-			font-size: 22px;
+			font-size: 16px;
 			font-weight: lighter;
 			border: 1px solid black;
 			background-color: white;
 			color: black;
-			height: 40px;
+			height: 30px;
 			letter-spacing: 2px;
-			padding-left: 40px;
-			padding-right: 30px;
+			padding-left: 25px;
+			padding-right: 25px;
 			margin-right: 35px;
+		}
 
-			&:last-of-type{
-				margin-right: 0;
-			}
-
-			&:first-of-type{
-				margin-left: 15px
-			}
+		&:last-of-type{
+			margin-right: 0;
 		}
 	}
+
 
 	.proj{
 
@@ -218,7 +215,6 @@
 	}
 
 	.cart{
-
 		background-color: #910710;
 		top: 50%;
 		-webkit-transform: translate(-50%);
@@ -227,177 +223,240 @@
 		width: 110px;
 		position: fixed;
 		right: -70px;
-		
+
+		.buttoncheck{
 
 
-		h1{
-			position: absolute;
-			margin: 0;
-			top: 30%;
-			left: 20px;
-			font-size: 22px;
-			line-height: 22px;
-			font-weight: lighter;
-			color: white;
-			font-family: fontDyane, "Ubuntu", Light;
-			cursor: pointer;
+			.checkfin{
+				display: none;
+			}
+		}
+
+		.big{
+			.checkini{
+				display: none;
+			}
 
 		}
+
+		// a{
+		// 	position: absolute;
+		// 	margin: 0;
+		// 	top: 30%;
+		// 	left: 20px;
+		// 	font-size: 22px;
+		// 	line-height: 22px;
+		// 	font-weight: lighter;
+		// 	color: white;
+		// 	font-family: fontDyane, "Ubuntu", Light;
+		// 	cursor: pointer;
+		// }
 	}
-
-	.cart-big{
-
-		background-color: white;
-		border: 5px solid #910710;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%);
-		transform: translate(-50%, -50%);
-		position: fixed;
-		min-width: 320px;
-		max-width: 700px;
-		width: 95vw;
-		height: 60vh;
-		padding: 60px;
-		z-index: 1;
-
-
-		&:before{
-			content: "";
-			position: absolute;
-			background-color: #fff;
-			width: 20%;
-			height: 20px;
-			top: -6px;
-			left: 50%;
-			-webkit-transform: translate(-50%, 0);
-			transform: translate(-50%, 0);
-
-		}
-
-		&:after{
-			content: '';
-			background: url(../_images/icons/heartred.png) no-repeat;
-			background-size: contain;
-			background-position: center;
-			display: block;
-			height: 19px;
-			width: 60px;
-			position: absolute;
-			top: -15px;
-			left: 50%;
-			-webkit-transform: translateX(-50%);
-			transform: translateX(-50%);
-		}
-
-
-		h1{
-			margin: 0;
-			left: 50%;
-			color: black;
-			font-size: 22px;
-			line-height: 22px;
-			font-weight: lighter;
-			font-family: fontDyane, "Ubuntu", Light;
-		}
-
-		.checkout-table{
-			table{
-				color: black;
-				font-size: 22px;
-				line-height: 22px;
-				font-weight: lighter;
-				font-family: fontDyane, "Ubuntu", Light;
-				text-align: center;
-			}
-
-			th{
-				width: 50%;
-				padding-bottom: 20px;
-
-				&:nth-of-type(2){
-					width: 25%;
-				}
-
-				&:nth-of-type(3){
-					width: 25%;
-				}
-			}
-
-			td{
-				padding-bottom: 10px;
-				&:nth-of-type(1){
-					text-align: left;
-				}
-			}
-
-			.checkout-cancel{
-				padding: 0;
-				border: none;
-				background: none;
-
-				i{
-					content: '';
-					background: url(../_images/icons/trash.png) no-repeat;
-					background-size: contain;
-					background-position: center;
-					display: block;
-					margin:0;
-					height: 30px;
-					width: 30px;
-				}
-			}
-		}
-
-		.checkout-close{
-			padding: 0;
-			border: none;
-			background: none;
-			position: absolute;
-			top: 20px;
-			right:20px;
-
-			i{
-				content: '';
-				background: url(../_images/icons/X.png) no-repeat;
-				background-size: contain;
-				background-position: center;
-				display: block;
-				margin:0;
-				height: 15px;
-				width: 15px;
-			}
-		}
-
-		.checkout{
-			padding: 0;
-			border: none;
-			background: none;
-			bottom: 0;
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
-			background-color: #910710;
-		}
-	}
-
-
-
-	.full{
-
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		background-color:#FFFBE6;
-		top: 0;
-		left: 0;
-		opacity: 0.5;
-		position: fixed;
-
-	}
-
-
 }
+
+
+
+
+
+// .cart{
+
+	// background-color: #910710;
+	// top: 50%;
+	// -webkit-transform: translate(-50%);
+	// transform: translate(-50%);
+	// height: 50px;
+	// width: 110px;
+	// position: fixed;
+	// right: -70px;
+
+
+
+// 	h1{
+// 		position: absolute;
+// 		margin: 0;
+// 		top: 30%;
+// 		left: 20px;
+// 		font-size: 22px;
+// 		line-height: 22px;
+// 		font-weight: lighter;
+// 		color: white;
+// 		font-family: fontDyane, "Ubuntu", Light;
+// 		cursor: pointer;
+
+// 	}
+// }
+
+// .cart-big{
+
+// 	background-color: white;
+// 	border: 5px solid #910710;
+// 	top: 50%;
+// 	left: 50%;
+// 	-webkit-transform: translate(-50%);
+// 	transform: translate(-50%, -50%);
+// 	position: fixed;
+// 	min-width: 320px;
+// 	max-width: 700px;
+// 	width: 95vw;
+// 	height: 60vh;
+// 	padding: 60px;
+// 	z-index: 1;
+
+
+// 	&:before{
+// 		content: "";
+// 		position: absolute;
+// 		background-color: #fff;
+// 		width: 20%;
+// 		height: 20px;
+// 		top: -6px;
+// 		left: 50%;
+// 		-webkit-transform: translate(-50%, 0);
+// 		transform: translate(-50%, 0);
+
+// 	}
+
+// 	&:after{
+// 		content: '';
+// 		background: url(../_images/icons/heartred.png) no-repeat;
+// 		background-size: contain;
+// 		background-position: center;
+// 		display: block;
+// 		height: 19px;
+// 		width: 60px;
+// 		position: absolute;
+// 		top: -15px;
+// 		left: 50%;
+// 		-webkit-transform: translateX(-50%);
+// 		transform: translateX(-50%);
+// 	}
+
+
+// 	h1{
+// 		margin: 0;
+// 		text-align: center;
+// 		color: white;
+// 		font-size: 22px;
+// 		line-height: 22px;
+// 		font-weight: lighter;
+// 		font-family: fontDyane, "Ubuntu", Light;
+// 		display: inline-block;
+// 		margin-left: 32px;
+
+
+// 		&:before{
+// 			content: '';
+// 			background: url(../_images/icons/cart.png) no-repeat;
+// 			background-size: contain;
+// 			background-position: center;
+// 			display: block;
+// 			height: 22px;
+// 			width: 22px;
+// 			display: inline-block;
+// 			margin: 0;
+// 			position: absolute;
+// 			left: -25px;
+// 		}
+
+// 	}
+
+
+// 	.checkout-table{
+// 		table{
+// 			color: black;
+// 			font-size: 22px;
+// 			line-height: 22px;
+// 			font-weight: lighter;
+// 			font-family: fontDyane, "Ubuntu", Light;
+// 			text-align: center;
+// 		}
+
+// 		th{
+// 			width: 50%;
+// 			padding-bottom: 20px;
+
+// 			&:nth-of-type(2){
+// 				width: 25%;
+// 			}
+
+// 			&:nth-of-type(3){
+// 				width: 25%;
+// 			}
+// 		}
+
+// 		td{
+// 			padding-bottom: 10px;
+// 			&:nth-of-type(1){
+// 				text-align: left;
+// 			}
+// 		}
+
+// 		.checkout-cancel{
+// 			padding: 0;
+// 			border: none;
+// 			background: none;
+
+// 			i{
+// 				content: '';
+// 				background: url(../_images/icons/trash.png) no-repeat;
+// 				background-size: contain;
+// 				background-position: center;
+// 				display: block;
+// 				margin:0;
+// 				height: 30px;
+// 				width: 30px;
+// 			}
+// 		}
+// 	}
+
+// 	.checkout-close{
+// 		padding: 0;
+// 		border: none;
+// 		background: none;
+// 		position: absolute;
+// 		top: 20px;
+// 		right:20px;
+
+// 		i{
+// 			content: '';
+// 			background: url(../_images/icons/X.png) no-repeat;
+// 			background-size: contain;
+// 			background-position: center;
+// 			display: block;
+// 			margin:0;
+// 			height: 15px;
+// 			width: 15px;
+// 		}
+// 	}
+
+// 	.checkout{
+// 		padding: 0;
+// 		border: none;
+// 		background: none;
+// 		bottom: 0;
+// 		position: absolute;
+// 		left: 50%;
+// 		-webkit-transform: translateX(-50%);
+// 		transform: translateX(-50%);
+// 		background-color: #910710;
+// 		margin-bottom: 30px;
+// 		min-width: 120px;
+// 		padding: 20px;
+// 	}
+// }
+
+// .full{
+// 	z-index: 1;
+// 	height: 100%;
+// 	width: 100%;
+// 	position: absolute;
+// 	background-color:#FFFBE6;
+// 	top: 0;
+// 	left: 0;
+// 	opacity: 0.5;
+// 	position: fixed;
+// }
+
 
 
 

@@ -18,7 +18,13 @@ var makelove = {
 
         init: function () {
 
-            // this.agegate.init();
+            if (this.exists('#owl-demo')){
+                hero.init($('#owl-demo'));
+            }
+
+            // if( this.exists('.cart')){
+            //     cartgrand.init($('.cart'))
+            // }
 
         }
 
@@ -29,18 +35,6 @@ var makelove = {
 
     $(document).ready(function () {
         makelove.init();
-
-        var owl = $("#owl-demo");
-
-        owl.owlCarousel({
-            navigation : true,
-            singleItem : true,
-            navigationText : false,
-            mouseDrag :  false,
-            autoPlay :   3000,
-            stopOnHover : true,
-            transitionStyle : "goDown"
-        });
     });
 
 })(jQuery, this);
