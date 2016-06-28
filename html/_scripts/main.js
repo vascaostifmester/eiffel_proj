@@ -22,9 +22,13 @@ var makelove = {
                 hero.init($('#owl-demo'));
             }
 
-            // if( this.exists('.cart')){
-            //     cartgrand.init($('.cart'))
-            // }
+            if( this.exists('.checkout-close')){
+                close.init($('.checkout-close'));
+            }
+
+            if( this.exists('.ini')){
+                open.init($('.ini'));
+            }
 
         }
 
