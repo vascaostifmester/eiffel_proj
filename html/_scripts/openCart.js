@@ -1,4 +1,4 @@
-var open = {
+var openCart = {
 	init: function($el){
 		this.$el = $el;
 		this.openBox();
@@ -6,7 +6,7 @@ var open = {
 
 	openBox: function(){
 		$('.cart').on('click', '.ini', function(e){
-			$(e.delegateTarget).addClass('big');
+			$(e.delegateTarget).toggleClass('big');
 		});
 	}
 };

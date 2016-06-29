@@ -1,38 +1,42 @@
 var makelove = {
 
-        debug: false,
+    debug: false,
 
-        endpoint: null,
+    endpoint: null,
 
-        log: function (what) {
-            if (makelove.debug) {
-                console.log(what);
-            }
-        },
+    log: function (what) {
+        if (makelove.debug) {
+            console.log(what);
+        }
+    },
 
-        exists: function (el) {
-            if ($(el).length > 0) {
-                return true;
-            }
-        }, 
+    exists: function (el) {
+        if ($(el).length > 0) {
+            return true;
+        }
+    }, 
 
-        init: function () {
+    init: function () {
 
-            if (this.exists('#owl-demo')){
-                hero.init($('#owl-demo'));
-            }
-
-            if( this.exists('.checkout-close')){
-                close.init($('.checkout-close'));
-            }
-
-            if( this.exists('.ini')){
-                open.init($('.ini'));
-            }
-
+        if (this.exists('#owl-demo')){
+            hero.init($('#owl-demo'));
         }
 
-    } || {};
+        if( this.exists('.checkout-close')){
+            closeCart.init($('.checkout-close'));
+        }
+
+        if( this.exists('.ini')){
+            openCart.init($('.ini'));
+        }
+
+        if( this.exists('.verproj')){
+            opencloseProj.init($('.verproj'));
+        }
+
+    }
+
+} || {};
 
 (function ($, window, undefined) {
     'use strict';
