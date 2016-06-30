@@ -22,16 +22,16 @@ var makelove = {
             hero.init($('#owl-demo'));
         }
 
-        if( this.exists('.checkout-close')){
-            closeCart.init($('.checkout-close'));
-        }
+        // if( this.exists('.checkout-close')){
+        //     closeCart.init($('.checkout-close'));
+        // }
 
-        if( this.exists('.ini')){
-            openCart.init($('.ini'));
-        }
+        // if( this.exists('.ini')){
+        //     openCart.init($('.ini'));
+        // }
 
         if( this.exists('.verproj')){
-            opencloseProj.init($('.verproj'));
+            openVer.init($('.verproj'));
         }
 
     }
@@ -43,6 +43,7 @@ var makelove = {
 
     $(document).ready(function () {
         makelove.init();
+        $('.checkout-summary').stacktable();
     });
 
 })(jQuery, this);
