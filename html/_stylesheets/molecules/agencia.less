@@ -4,140 +4,267 @@
 	font-family: fontDyane, "Ubuntu", Light;
 	.container{
 		.row{
-			h1{
-				position: absolute;
-				color: black;
-				font-weight: lighter;
-				font-size: 19px;
-				line-height: 19px;
-				top: -90px;
-				left: 50%;
-				transform: translateX(-50%);
-				background-color: white;
-				text-align: center;
-				width: 270px;
-				
-			}
-
-			h2{
-				position: absolute;
-				color: black;
-				font-weight: lighter;
-				font-size: 19px;
-				line-height: 19px;
-				top: 210px;
-				left: 50%;
-				transform: translateX(-50%);
-				background-color: white;
-				text-align: center;
-				width: 270px;
-				
-			}
-
-			p{
-				padding:30px;
+			.sub{
+				padding: 30px;
 				padding-top: 50px;
 				border-left: 1px solid black;
 				border-bottom: 1px solid black;
 				border-right: 1px solid black;
 				border-top: 1px solid black;
-				color:black;
-				font-size: 16px;
-				line-height: 26px;
-				font-weight: lighter;
-				text-align: justify;
-				color:black;
 
-				
-				
-
-			}
-
-			.list{
-				border-left: 1px solid black;
-				border-bottom: 1px solid black;
-				border-right: 1px solid black;
-				border-top: 1px solid black;
-				
-				p{
-					border:0;
-					margin-bottom: 0;
-					padding-bottom: 5px;
+				@media only screen and (max-width : @screen-xs-max) {
+					margin-bottom: 40px;
 				}
-
-				ul{
-
-					color:black;
-					margin: 0 0 0px 85px;
-					padding-bottom: 30px;
-					padding-right: 30px;
-					text-align: justify;
-
-					li{
-						padding-left: 10px;
-						font-size: 16px;
-						line-height: 26px;
-						font-weight: lighter;
-
-						strong{
-							font-weight: 700;
-						}
+				
+				h1{
+					position: absolute;
+					color: black;
+					font-weight: lighter;
+					font-size: 19px;
+					line-height: 19px;
+					top: -90px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: white;
+					text-align: center;
+					width: 270px;
+					@media only screen and (max-width : @screen-xs-max) {
+						font-size: 15px;
+						line-height: 15px;
+						top: -30px; 
+						width:150px;
 					}
 
+					@media only screen and (min-width:@screen-xs-max ) and (max-width: @screen-sm) {
+						top: -30px; 
+						// background-color: pink;
+					}
+
+					@media only screen and (min-width:@screen-md ) and (max-width: @screen-md-max) {
+						width: 200px;
+						
+					}
+				}
+
+				h2{
+					position: relative;
+					color: black;
+					font-weight: lighter;
+					font-size: 19px;
+					line-height: 19px;
+					top: -60px;
+					margin: 0 auto;
+					background-color: white;
+					text-align: center;
+					width: 270px;
+					@media only screen and (max-width : @screen-xs-max) {
+						font-size: 15px;
+						line-height: 15px;
+						top: -60px;
+						width:140px;
+					}
+				}
+
+				p{
+					color:black;
+					font-size: 16px;
+					line-height: 26px;
+					font-weight: lighter;
+					text-align: justify;
+					color:black;
+					@media only screen and (max-width : @screen-xs-max) {
+						font-size: 12px;
+						line-height: 22px;
+
+					}
+
+					@media only screen and (min-width : @screen-sm) and (max-width: @screen-sm-max){
+						font-size: 14px;
+						line-height: 24px;
+					}
+
+					@media only screen and (min-width : @screen-md) and (max-width: @screen-md-max){
+						font-size: 15px;
+						line-height: 25px;
+					}
+
+					
+				}
+
+				.list{
+
+					p{
+						border:0;
+						margin-bottom: 0;
+						padding-bottom: 5px;
+					}
+
+					ul{
+
+						color:black;
+						margin: 0 0 0px 85px;
+						padding-bottom: 30px;
+						padding-right: 30px;
+						text-align: justify;
+
+						@media only screen and (max-width : @screen-xs) {
+							margin: 0 0 0 15px;
+							padding-right: 10px;
+
+						}
+
+						@media only screen and (min-width:@screen-xs ) and (max-width: @screen-xs-max) {
+							margin: 0 0 0 25px;
+							padding-right: 20px;
+
+						}
+
+
+						li{
+							padding-left: 10px;
+							font-size: 16px;
+							line-height: 26px;
+							font-weight: lighter;
+
+
+							@media only screen and (max-width :@screen-xs) {
+								font-size: 12px;
+								line-height: 22px;
+								padding-left: 0px;
+								margin-left: 10px;
+
+							}
+
+							@media only screen and (min-width:@screen-xs ) and (max-width: @screen-xs-max) {
+								font-size: 12px;
+								line-height: 22px;
+								padding-left: 10px;
+								margin-left: 20px;
+
+							}
+
+							strong{
+								font-weight: 700;
+							}
+						}
+
+					}
 				}
 			}
-
-
-
 
 			.tit{
-				margin-bottom: 120px;
-				margin-top: 0;
+				text-transform: uppercase;
+				border-bottom: 1px solid black;
+				padding-bottom: 15px;
+				padding-top: 15px;
+				padding-right: 50px;
+				padding-left: 50px;
+				text-align: center;
+				border-left: 1px solid black;
+				border-top: 1px solid black;
+				border-right: 1px solid black;
+				top: 0;	
+				
+				margin-top: 30px;
+				margin: 30px auto 60px;
+
+				@media only screen and (max-width : @screen-xs-max) {
+					width:220px;
+				}
+
+				@media only screen and (min-width:@screen-sm ) and (max-width: @screen-sm-max) {
+					width: 330px;
+				}
 
 
+				&:before{
+					content: '';
+					background: url(../_images/icons/heartred.png) no-repeat;
+					background-color: white;
+					background-size: contain;
+					background-position: center;
+					display: block;
+					height: 19px;
+					width: 60px;
+					position: absolute;
+					top: 20px;
+					left: 50%;
+					-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
+
+					@media only screen and (max-width : @screen-sm-max) {
+						top: -10px;
+					}
+
+				}
 
 				h1{
-					text-transform: uppercase;
-					border-bottom: 1px solid black;
-					padding-bottom: 15px;
-					padding-top: 15px;
-					padding-right: 50px;
-					padding-left: 50px;
-					text-align: center;
 					margin: 0 auto;
-					border-left: 1px solid black;
-					border-top: 1px solid black;
-					border-right: 1px solid black;
-					top: 0;	
-					width: 180px;
-					margin-top: 0;
+					color: black;
+					font-weight: lighter;
+					font-size: 19px;
+					line-height: 19px;
+					font-family: fontDyane, "Ubuntu", Light;
+					font-weight: lighter;
 
-					&:last-of-type{
-						width: 330px;
-						margin-top: 30px;
-
+					@media only screen and (max-width : @screen-xs-max) {
+						font-size: 17px;
+						line-height: 17px;
 					}
+				}
 
+			}
+
+
+			&:nth-of-type(2){
+				div{
+					&:nth-of-type(2){
+						.sub{
+							@media only screen and (min-width:@screen-sm ) and (max-width: @screen-sm-max) {
+								margin-bottom: 40px;
+							}
+						}
+						
+					}
+				}
+			}
+			
+
+			&:nth-of-type(3){
+				.tit{
+					margin: 40px auto 60px;
+					padding-left: 0;
+					padding-right: 0;
 					&:before{
-						content: '';
-						background: url(../_images/icons/heartred.png) no-repeat;
-						background-color: white;
-						background-size: contain;
-						background-position: center;
-						display: block;
-						height: 19px;
-						width: 60px;
-						position: absolute;
-						top: -10px;
-						left: 50%;
-						-webkit-transform: translateX(-50%);
-						transform: translateX(-50%);
-
-
+						top: 30px;
 					}
 
+					@media only screen and (max-width : @screen-sm-max) {
+						font-size: 17px;
+						line-height: 17px;
+						
+
+						&:before{
+							top: -10px;
+						}
+					}
+				}
+			}
+
+			&:nth-of-type(4){
+				.sub{
+					&:nth-of-type(2){
+						margin-top: 40px;
+
+						@media only screen and (min-width:@screen-sm ) and (max-width: @screen-sm-max) {
+							margin-bottom: 40px;
+						}
+					}
 				}
 			}
 		}
 	}
 }
+
+
+
