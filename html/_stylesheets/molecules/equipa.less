@@ -3,69 +3,108 @@
 	padding-bottom:30px;
 	font-family: fontDyane, "Ubuntu", Light;
 
+	.equip{
 
-	.equipa-detail{
-		color: black;
-		border: 1px solid black;
-		text-align: center;
-		padding: 25px;
-		margin-bottom: 60px;
-		margin-top: 60px;
-		margin-right: 0; 
-
-		img{
-			content: '';
-			width: 125px;
-			position: absolute;
-			top: 0;
-			left: 50%;
-			-webkit-transform: translateX(-50%);
-			transform: translateX(-50%);
-			height: 121px;
-			border-radius: 50%;
-			background-size: 130px 130px;
-			background-position: center;
-			z-index: 1;
+		@media only screen and (max-width : @screen-xs-max) {
+			width: 50%;
+			min-width: 235px;
+			margin: 0 auto;
 		}
 
-		h1{
-			font-size: 22px;
-			line-height: 22px;
-			margin-top:50px;
-			margin-bottom: 0;
+		.equipa-detail{
+			color: black;
+			border: 1px solid black;
+			text-align: center;
+			padding: 25px;
+			margin-bottom: 60px;
+			margin-top: 60px;
+			margin-right: 0;
 
+			@media only screen and (max-width : @screen-xs-max) {
+				margin-bottom: 110px;
+			}
 
-
-			&::before{
+			img{
 				content: '';
-				height: 110px;
-				background-color: white;
-				background-position: center;
-				width: 230px;
+				width: 95px;
+				height: 91px;
+				top: -60px;
 				position: absolute;
-				top: 10px;
 				left: 50%;
 				-webkit-transform: translateX(-50%);
 				transform: translateX(-50%);
+				border-radius: 50%;
+				background-size: 130px 130px;
+				background-position: center;
+				z-index: 1;
+
+				@media only screen and (min-width : @screen-sm) {
+					top: -20px;
+					width: 125px;
+					height: 121px;
+
+				}
 			}
+
+			h1{
+				font-size: 18px;
+				line-height: 22px;
+				margin-top:30px;
+				margin-bottom: 0;
+
+				@media only screen and (min-width : @screen-sm) {
+					font-size: 22px;
+					margin-top:50px;
+				}
+
+				&::before{
+					content: '';
+					height: 80px;
+					background-color: white;
+					background-position: center;
+					width: 170px;
+					position: absolute;
+					top: -40px;
+					left: 50%;
+					-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
+
+					@media only screen and (min-width : @screen-sm) {
+						top: 20px;
+						height: 80px;
+						width: 200px;
+
+
+					}
+				}
+			}
+
+			hr{
+				width: 50px;
+				border-bottom: 1px solid #6f6a6a;
+				margin: 16px auto;
+
+				@media only screen and (min-width : @screen-sm) {
+					margin: 22px auto;
+				}
+
+			}
+
+
+
+			p{
+				text-transform: uppercase;
+				font-size: 16px;
+				font-weight: lighter;
+				color: #6f6a6a;
+
+				@media only screen and (min-width : @screen-sm) {
+					font-size: 20px;
+				}
+			}
+
+
 		}
-
-		hr{
-			width: 50px;
-			border-bottom: 1px solid #6f6a6a;
-			margin: 22px auto;
-
-		}
-
-
-
-		p{
-			text-transform: uppercase;
-			font-size: 20px;
-			font-weight: lighter;
-			color: #6f6a6a;
-		}
-
-
 	}
+
 }
