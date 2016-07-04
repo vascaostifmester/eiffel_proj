@@ -41,22 +41,35 @@
 				}
 
 				&:last-of-type{
-					margin:0 auto 10px;
+					margin: 0 15px 10px auto;
+
+					@media only screen and (min-width : @screen-sm) {
+						margin:0 auto 10px;
+					}
 
 					li{
 						opacity: 1;
-						margin-right: 30px;
-
-						&:last-of-type{
-							margin-right: 0;
-						}
+						margin-right: 0;
+						display: block;
+						background-color: #e1e1e1;
+						margin-bottom: 5px;
 
 						a{
 							text-transform: uppercase;
 							color: black;
 							font-size: 12px;
 							line-height: 30px;
-							text-decoration: none;							
+							text-decoration: none;
+						}
+
+						@media only screen and (min-width : @screen-sm) {
+							margin-right: 30px;
+							display: inline-block;
+							background-color: transparent;
+
+							&:last-of-type{
+								margin-right: 0;
+							}
 						}
 					}					
 				}
