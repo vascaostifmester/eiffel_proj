@@ -20,7 +20,13 @@
 			padding-right: 25px;
 			margin-right: 35px;
 			outline: none;
+
+			&:hover{
+				color: white;
+			}
 		}
+
+
 
 		&:last-of-type{
 			margin-right: 0;
@@ -51,35 +57,39 @@
 		.project-image{
 
 			position: relative;
-			height: 245px;
+			height: 185px;
 			overflow: hidden;
 			margin-bottom: 35px;
 
+			@media only screen and (min-width : @screen-xs) {
+				height: 245px;
+			}
+
 			img{
-				position: absolute;
 				width: 100%;
-				top: -70px;
-				left: 50%;
-				transform: translateX(-50%);
+				height: 100%;
 
 
 			}
 		}
 
 
-		h1{
-			font-size: 22px;
+		h1{    
+			font-size: 18px;
 			line-height: 22px;
 			margin-top: 0;
 			margin-bottom: 0;
 
+			@media only screen and (min-width: @screen-sm){
+				font-size: 22px;
+			}
 			&:before{
 				content: '';
 				background: url(../_images/icons/triangle1.png) no-repeat;
 				background-size: contain;
 				display: block;
 				position: absolute;
-				top: 200px;
+				top: 140px;
 				left: 50%;
 				max-width: 90px;
 				width: 100%;
@@ -88,9 +98,10 @@
 				-webkit-transform: rotate(180deg) translateX(50%);
 				transform: translateX(-50%);
 
-
-
-
+				@media only screen and (min-width: @screen-xs) {
+					top: 200px;
+				}
+				
 
 			}
 		}
@@ -105,23 +116,40 @@
 
 		p{
 			text-transform: uppercase;
-			font-size: 20px;
+			font-size: 16px;
 			font-weight: lighter;
 			color: #6f6a6a;
 			margin-bottom: 0;
 
+			@media only screen and (min-width: @screen-sm){
+				font-size: 20px;
+			}
+
 			&:before{
 				content: '';
 				position: absolute;
-				bottom: 45px;
+				bottom: -15px;
 				left: 50%;
-				width: 270px;
+				width: 130px;
 				height: 30px;
 				translateX: 50%;
 				color: white;
 				-webkit-transform: translateX(-50%);
 				transform: translateX(-50%);
 				background-color: white;
+
+				@media only screen and (min-width: @screen-sm){
+					bottom: 45px;
+					width: 160px;
+				}
+
+				// @media only screen and (min-width: @screen-md){
+				// 	width: 160px;
+				// }
+
+				@media only screen and (min-width: @screen-lg){
+					width: 270px;
+				}
 			}
 		}
 
@@ -130,99 +158,108 @@
 			position: absolute;
 			color: black;
 			font-weight: lighter;
-			font-size: 24px;
+			font-size: 20px;
 			line-height: 30px;
-			top: 415px;
-			left: 43%;
+			top: 356px;
+			left: 41%;
 
-		}
-	}
-}
-
-
-
-&:nth-of-type(3){
-	.projectos-detail{
-		.project-image{
-			img{
-				top: -120px;
+			@media only screen and (min-width: @screen-xs){
+				top: 415px;
+				left: 43%;
 			}
-		}
-	}
-}
 
-&:nth-of-type(4){
-	.projectos-detail{
-		.project-image{
-			img{
-				top: -200px;
+			@media only screen and (min-width: @screen-sm){
+				font-size: 24px;
 			}
+
 		}
 	}
 }
 
-&:nth-of-type(5){
-	.projectos-detail{
-		.project-image{
-			img{
-				top: -170px;
-			}
-		}
-	}
-}
 
-&:nth-of-type(6){
-	.projectos-detail{
-		.project-image{
-			img{
-				top: -200px;
-			}
-		}
-	}
-}
 
-&:nth-of-type(7){
-	.projectos-detail{
-		.project-image{
-			img{
-				top: -200px;
-			}
-		}
-	}
-}
+// &:nth-of-type(3){
+// 	.projectos-detail{
+// 		.project-image{
+// 			img{
+// 				top: -120px;
+// 			}
+// 		}
+// 	}
+// }
 
-&:nth-of-type(8){
-	.projectos-detail{
-		.project-image{
-			img{
-				top: -120px;
-				max-width: 110%;
-				width:110%;
+// &:nth-of-type(4){
+// 	.projectos-detail{
+// 		.project-image{
+// 			img{
+// 				top: -200px;
+// 			}
+// 		}
+// 	}
+// }
 
-			}
-		}
-	}
-}
+// &:nth-of-type(5){
+// 	.projectos-detail{
+// 		.project-image{
+// 			img{
+// 				top: -170px;
+// 			}
+// 		}
+// 	}
+// }
 
-&:nth-of-type(9){
-	.projectos-detail{
-		.project-image{
-			img{
-				top: -80px;
-			}
-		}
-	}
-}
+// &:nth-of-type(6){
+// 	.projectos-detail{
+// 		.project-image{
+// 			img{
+// 				top: -200px;
+// 			}
+// 		}
+// 	}
+// }
 
-&:nth-of-type(10){
-	.projectos-detail{
-		.project-image{
-			img{
-				top: -200px;
-			}
-		}
-	}
-}
+// &:nth-of-type(7){
+// 	.projectos-detail{
+// 		.project-image{
+// 			img{
+// 				top: -200px;
+// 			}
+// 		}
+// 	}
+// }
+
+// &:nth-of-type(8){
+// 	.projectos-detail{
+// 		.project-image{
+// 			img{
+// 				top: -120px;
+// 				max-width: 110%;
+// 				width:110%;
+
+// 			}
+// 		}
+// 	}
+// }
+
+// &:nth-of-type(9){
+// 	.projectos-detail{
+// 		.project-image{
+// 			img{
+// 				top: -80px;
+// 			}
+// 		}
+// 	}
+// }
+
+// &:nth-of-type(10){
+// 	.projectos-detail{
+// 		.project-image{
+// 			img{
+// 				top: -200px;
+// 			}
+// 		}
+// 	}
+// }
 
 
 

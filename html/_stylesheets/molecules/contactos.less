@@ -6,8 +6,13 @@
 	.aviso{
 		text-align: center;
 		color: black;
-		padding-left: 180px;
-		padding-right: 180px;
+		padding-left: 0;
+		padding-right: 0;
+
+		@media only screen and (min-width: @screen-sm){
+			padding-left: 180px;
+			padding-right: 180px;
+		}
 
 		p{
 			margin-bottom: 0;
@@ -27,19 +32,27 @@
 	.contact{
 		text-align: center;
 		color: black;
-		padding-left: 180px;
-		padding-right: 180px;
 		margin-top: 40px;
 
+		@media only screen and (min-width:@screen-lg){
+			padding-left: 180px;
+			padding-right: 180px;
+		}
+
 		p{
-			display: inline-block;
+			display: block;
 			margin-bottom: 0;
-			margin-right: 5px;
-			border-right: 2px solid #910710;
-			padding-right: 15px;
 			font-size: 20px;
 			font-weight: lighter;
 			color: black;
+
+			@media only screen and (min-width:@screen-sm){
+				display: inline-block;
+				margin-right: 5px;
+				border-right: 2px solid #910710;
+				padding-right: 15px;
+			}
+			
 
 		}
 
@@ -49,6 +62,19 @@
 			text-decoration: none;
 			color: black;
 			opacity: 0.8;
+			border-top: 2px solid #910710;
+			margin-top: 5px;
+			padding-top: 5px;
+
+			@media only screen and (min-width:@screen-sm){
+				border: 0;
+				padding-top: 0;
+				margin-top: 0;
+			}
+
+
+
+			
 		}
 	}
 
@@ -66,66 +92,196 @@
 			padding-bottom: 0px;
 			text-align: center;
 
-			p{
+			.caixas{
 				border: 1px solid black;
-				height: 42px;
-				margin: 0;
-				display: inline-block;
 				text-align: center;
-				padding-left: 42px;
-				font-family: fontDyane, "Ubuntu", Light;
-				color:black;
-				font-weight: lighter;
-				line-height: 20px;
-				font-size: 18px;
-				width:500px;
-			}
-
-			input{
-				display: inline-block;
 				margin: 0 auto;
-				height: 40px;
-				width: 320px;
-				border-left: 1px solid black;
-				border-bottom: 0;
-				border-top: 0;
-				border-right: 0;
-				padding: 10px;
-				border-radius: 0;
-				margin-left: 43px;
-				font-family: fontDyane, "Ubuntu", Light;
-				color:black;
-				font-weight: lighter;
-				line-height: 20px;
-				font-size: 16px;
-				width:360px;
-
 				
+				p{
+					margin: 0;
+					display: inline-block;
+					font-family: fontDyane, "Ubuntu", Light;
+					color: black;
+					font-weight: lighter;
+					line-height: 20px;
+					font-size: 18px;
+					padding-left: 10px;
+				}
+
+				input{
+					border-top: 1px solid black;
+					border-left: 0;
+					display: inline-block;
+					margin: 0 auto;
+					height: 35px;
+					border-bottom: 0;
+					border-right: 0;
+					padding: 10px;
+					border-radius: 0;
+					font-family: fontDyane, "Ubuntu", Light;
+					color: black;
+					font-weight: lighter;
+					line-height: 20px;
+					font-size: 16px;
+					outline: none;
+					width: 100%;
+				}
+
+				@media only screen and (min-width:@screen-xs){
+					
+					text-align: left;
+
+					p{
+
+					}
+
+					input{
+						border-left: 1px solid black;
+						border-top: 0;
+						margin-left: 6px;
+						width:  379px;
+					}
+				}
+
+				@media only screen and (min-width:@screen-sm){
+
+					p{
+						padding-left: 21px;
+					}
+
+					input{
+						margin-left: 21px;
+						width: 238px;
+
+					}
+				}
+
+
+				@media only screen and (min-width:@screen-md){
+					width: 90%;
+
+					p{
+						padding-left: 21px;
+					}
+
+					input{
+						margin-left: 21px;
+						width: 301px;
+					}
+				}
+
+				@media only screen and (min-width:@screen-lg){
+					width:80%;
+					
+					p{
+						padding-left: 23px;
+					}
+
+					input{
+						width: 351px;
+					}
+				}
 			}
+
+			&:first-of-type{
+				padding-top: 20px;
+
+				@media only screen and (min-width:@screen-md){
+					padding-top: 60px;
+				}
+
+			}
+
+
+
 
 			&:nth-of-type(2){
-				p{
-					padding-left: 44px;
+
+				@media only screen and (min-width:@screen-sm){
+
+					p{
+						padding-left: 23px;
+					}
+
+					input{
+						margin-left: 23px;
+						width: 239px;
+					}
 				}
 
-				input{
-					width: 360px;
-					margin-left: 46px;
+				@media only screen and (min-width:@screen-md){
+					p{
+						padding-left: 23px;
+					}
+
+					input{
+						margin-left: 23px; 
+						width: 303px;
+					}
+				}
+
+
+				@media only screen and (min-width:@screen-lg){
+					p{
+						padding-left: 25px;
+					}
+
+					input{
+						width: 352px;
+					}
 				}
 			}
 
-			&:last-of-type{
-				p{
-					padding-left: 30px;
+
+
+
+
+			&:last-of-type{	
+
+				@media only screen and (min-width:@screen-xs){
+
+					input{
+						width: 284px;
+					}
 				}
 
-				input{
-					width:360px;
-					margin-left: 30px;
+				@media only screen and (min-width:@screen-sm){
+
+					p{
+						padding-left: 8px;
+					}
+
+					input{
+						margin-left: 8px;
+						width: 239px;
+					}	
 				}
 
+
+				@media only screen and (min-width:@screen-md){
+					p{
+						padding-left: 8px;
+					}
+
+					input{
+						margin-left: 8px;
+						width: 303px;
+					}
+				}
+
+				@media only screen and (min-width:@screen-lg){
+
+					p{
+						padding-left: 10px;
+					}
+
+					input{
+						margin-left: 6px;
+						width: 354px;
+					}
+				}
 			}
-			
+
 		}
 	}
 
@@ -145,24 +301,45 @@
 			line-height: 20px;
 			font-size: 16px;
 			margin-bottom: 20px;
+			outline: none;
 
 		}
 
 		h1{
+
 			position: absolute;
 			color: black;
 			font-weight: lighter;
-			font-size: 19px;
-			line-height: 19px;
-			top: -75px;
+			font-size: 15px;
+			line-height: 15px;
+			top: -30px;
 			left: 50%;
+			-webkit-transform: translateX(-50%);
 			transform: translateX(-50%);
 			background-color: white;
 			text-align: center;
-			width: 270px;
+			width: 120px;
 			margin-bottom: 0;
 			text-transform: uppercase;
-			
+
+			@media only screen and (min-width: @screen-sm) {
+				top: 12px;
+				margin-top: 0;
+				width: 200px;
+			}
+
+			@media only screen and (min-width: @screen-md) {
+				top: 12px;
+				margin-top: 0;
+				width: 220px;
+			}
+
+			@media only screen and (min-width: @screen-lg) {
+				font-size: 19px;
+				line-height: 19px;
+				top: 11px;
+				width: 270px;
+			}
 		}
 
 		button{
@@ -174,6 +351,7 @@
 			width: 100px;
 			height: 40px;
 			letter-spacing: 2px;
+			outline: none;
 		}
 	}
 }
