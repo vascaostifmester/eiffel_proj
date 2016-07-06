@@ -5,86 +5,153 @@
 
 	.container{
 
-		h1{
-			text-transform: uppercase;
-			text-align: center;
-			margin: 0 0 30px;
-			color: black;
-			font-weight: lighter;
-			font-size: 19px;
-			line-height: 19px;
+		.destaques{
+			h1{
+				text-transform: uppercase;
+				text-align: center;
+				margin: 0 0 30px;
+				color: black;
+				font-weight: lighter;
+				font-size: 19px;
+				line-height: 19px;
+			}
 		}
 
-		ul{
-			margin: 0 auto;
-			text-align: center;
-			li{
-				display: inline-block;
-				text-align: left;
-				
-				.novidades{
-					// visibility: hidden;
-					opacity: 0;
-					
+		.proj{
+
+			@media only screen and (max-width : @screen-xs-max) {
+				width: 50%;
+				min-width: 235px;
+				margin: 0 auto;
+			}
+
+
+			.projectos-detail{
+				color: black;
+				border: 1px solid black;
+				text-align: center;
+				padding-bottom: 60px;
+				margin-bottom: 60px;
+				margin-right: 0;
+				display: block;	
+			}
+
+
+			.project-image{
+
+				position: relative;
+				height: 185px;
+				overflow: hidden;
+				margin-bottom: 35px;
+
+				@media only screen and (min-width : @screen-xs) {
+					height: 245px;
+				}
+
+				img{
+					width: 100%;
+					height: 100%;
+
+
+				}
+			}
+
+
+			h1{    
+				font-size: 18px;
+				line-height: 22px;
+				margin-top: 0;
+				margin-bottom: 0;
+
+				@media only screen and (min-width: @screen-sm){
+					font-size: 22px;
+				}
+				&:before{
+					content: '';
+					background: url(../_images/icons/triangle1.png) no-repeat;
+					background-size: contain;
+					display: block;
 					position: absolute;
-					text-transform: uppercase;
-					top: 50%;
-					transform: translateY(-50%);
-					color:black;
-					margin: 0 auto;
-					width: 500px;
-					text-decoration: none;
-					text-align: center;
-				}
+					top: 140px;
+					left: 50%;
+					max-width: 90px;
+					width: 100%;
+					max-height: 90px;
+					height: 100%;
+					-webkit-transform: rotate(180deg) translateX(50%);
+					transform: translateX(-50%);
 
-				&:hover{
-					figure{
-						border-top: 8px solid #910710;
-						
+					@media only screen and (min-width: @screen-xs) {
+						top: 200px;
 					}
 
-					.novidades{
-						
-						//visibility: visible;
-						opacity: 1;
-					
-						background-color: #e1e1e1;
-						background-color-opacity:0.5;
-						font-style: italic;
-						font-weight: lighter;
+
+				}
+			}
+
+			hr{
+				width: 50px;
+				border-bottom: 1px solid #6f6a6a;
+				margin: 22px auto;
+			}
 
 
+
+			p{
+				text-transform: uppercase;
+				font-size: 16px;
+				font-weight: lighter;
+				color: #6f6a6a;
+				margin-bottom: 0;
+
+				@media only screen and (min-width: @screen-sm){
+					font-size: 20px;
+				}
+
+				&:before{
+					content: '';
+					position: absolute;
+					bottom: -15px;
+					left: 50%;
+					width: 130px;
+					height: 30px;
+					translateX: 50%;
+					color: white;
+					-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
+					background-color: white;
+
+					@media only screen and (min-width: @screen-sm){
+						bottom: 45px;
+						width: 160px;
 					}
 
-					img{
-						
-						opacity: 0.3;
+
+					@media only screen and (min-width: @screen-lg){
+						width: 270px;
 					}
 				}
+			}
 
-				&:first-of-type{
-					margin-right: 15px;
+			a{
+				text-decoration: none;
+				position: absolute;
+				color: black;
+				font-weight: lighter;
+				font-size: 20px;
+				line-height: 30px;
+				top: 356px;
+				left: 41%;
+
+				@media only screen and (min-width: @screen-xs){
+					top: 415px;
+					left: 43%;
 				}
 
-				&:last-of-type{
-					margin-left: 15px;
-				}
-				figure{
-					width: 500px;
-					border-top: 8px solid #e1e1e1;
-					border-top-left-radius: 2%;
-					border-top-right-radius: 2%;
-
-					img{
-
-						width: 100%;
-						border-bottom-left-radius: 20%;
-						border-bottom-right-radius: 20%;
-
-					}
+				@media only screen and (min-width: @screen-sm){
+					font-size: 24px;
 				}
 
-				
 			}
 		}
 	}
