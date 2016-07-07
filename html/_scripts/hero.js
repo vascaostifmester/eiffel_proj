@@ -10,7 +10,7 @@ var hero = {
 			singleItem : true,
 			navigationText : false,
 			mouseDrag :  false,
-			autoPlay :   300000,
+			autoPlay :   3000,
 			stopOnHover : true,
 			transitionStyle : "goDown"
 		});

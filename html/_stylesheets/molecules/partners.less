@@ -5,6 +5,11 @@
 	font-family: fontDyane, "Ubuntu", Light;
 
 	.parc{
+		padding-right: 30px;
+		@media only screen and (min-width:@screen-sm){
+			padding-right: 15px;
+		}
+		
 		h1{
 			text-transform: uppercase;
 			text-align: center;
@@ -24,12 +29,20 @@
 			text-align: center;
 			min-height: 82px;
 			padding-top: 20px;
-			border-right: 2px solid white;
+			padding-right: 30px;
+			@media only screen and (min-width:@screen-sm){
+				border-right: 2px solid white;
+				padding-right: 15px;
+			}
+			
 
 			.image{
 				padding-bottom: 10px;
 				width: 50%;
 				margin: 0px auto;
+				@media only screen and (max-width:@screen-xs-max){
+					border-bottom: 2px solid white;
+				}
 
 				a{
 					position: relative;
@@ -78,6 +91,14 @@
 					}
 
 				}
+
+			}
+
+			&:nth-of-type(2){
+				.image{
+					padding-bottom: 20px;
+				}
+				
 			}
 
 			&:last-of-type{

@@ -4,10 +4,9 @@
 		img{
 			display: block;
 			width: 100%;
-   			max-height: 700px;
-  			min-height: 700px;
+			max-height: 850px;
 
-  			@media only screen and (min-width : @screen-sm) {
+			@media only screen and (min-width : @screen-sm) {
 				margin:0 auto 10px;
 			}
 
@@ -15,43 +14,57 @@
 	}
 
 	.owl-controls{
-		position: absolute;
-		right: 50px;
-		width: 20px;
-		top: 50%;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
-		margin-top: 0;
 
-		.owl-page{
-			margin-bottom: 10px;
-			span{
-				content: '';
-				background:url(../_images/icons/heart6.png);
-				background-repeat:no-repeat;
-				background-size: 100% 100%;
-				width: 60px;
-				height: 40px;
-				margin: 0 0;
+		.owl-pagination{
+			display: none;
+
+			@media only screen and (min-width:@screen-sm){
+				display: inline-block;
+				position: absolute;
+				right: 50px;
+				width: 20px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				margin-top: 0;
+
+				.owl-page{
+					margin-bottom: 10px;
+					span{
+						content: '';
+						background:url(../_images/icons/heart6.png);
+						background-repeat:no-repeat;
+						background-size: 100% 100%;
+						width: 60px;
+						height: 40px;
+						margin: 0 0;
+					}
+
+				}
+
+				.active{
+					span{
+						content: '';
+						background:url(../_images/icons/heart7.png);
+						background-repeat:no-repeat;
+						background-size: 100% 100%;
+						width: 60px;
+						height: 40px;
+						margin: 0 0;
+					}
+				}
 			}
-			
 		}
 
-		.active{
-			span{
-				content: '';
-				background:url(../_images/icons/heart7.png);
-				background-repeat:no-repeat;
-				background-size: 100% 100%;
-				width: 60px;
-				height: 40px;
-				margin: 0 0;
-			}
-		}
+		
+		
+
+		
 
 	}
 
 	.owl-buttons{
-		display: none;
+			display: none;
+
 	}
 }

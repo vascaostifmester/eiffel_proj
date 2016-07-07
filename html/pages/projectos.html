@@ -19,7 +19,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-md-2 nav">
+          <div class="nav">
 
 
             <div class="icon">
@@ -30,13 +30,13 @@
 
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 logo">
             <a href="http://localhost:3000/">
               <img src="../_images/logo.png" alt="">
             </a>
           </div>
 
-          <div class="col-md-8 menu">
+          <div class="col-md-8 col-sm-8 menu">
             <ul>
               <li>
                 <a href="agencia.html" class="hvr-overline-from-center">
@@ -86,6 +86,11 @@
                   <button class="hvr-shutter-out-horizontal" type="submit" value="Enviar"> DIAS ESPECIAIS </button>
                 </div>
               </div>
+            </div>
+
+            <div class="row mr">
+
+
               <div class="col-md-4 col-sm-6 proj">
                 <div class="projectos-detail">
 
@@ -293,95 +298,95 @@
                 </div>
               </div>
 
+            </div>
 
+            <div class="md-modal md-effect-1" id="modal-1">
+              <div class="md-content">
+                <h3>Modal Dialog</h3>
 
-              <div class="md-modal md-effect-1" id="modal-1">
-                <div class="md-content">
-                  <h3>Modal Dialog</h3>
+                <div class="checkout-table">
 
-                  <div class="checkout-table">
-
-                    <table class="checkout-summary">
-                      <thead>
-                        <tr>
-                          <th>Item</th>
-                          <th>Quantidade</th>
-                          <th>Preço</th>
-                          <th>&nbsp;</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            Imitations <span>Mark Lanegan</span>
-                          </td>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            12.90€
-                          </td>
-                          <td>
-                            <button class="checkout-cancel">
-                              <i class="icon-trash"></i>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Out Of Exile <span>Audioslave</span>
-                          </td>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            15.90€
-                          </td>
-                          <td>
-                            <button class="checkout-cancel">
-                              <i class="icon-trash"></i>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            Cure For Pain <span>Morphine</span>
-                          </td>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            11.90€
-                          </td>
-                          <td>
-                            <button class="checkout-cancel">
-                              <i class="icon-trash"></i>
-                            </button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                  </div>
-                  <button class="checkout-close md-close"><i class="icon"></i></button>
+                  <table class="checkout-summary">
+                    <thead>
+                      <tr>
+                        <th>Item</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Imitations <span>Mark Lanegan</span>
+                        </td>
+                        <td>
+                          1
+                        </td>
+                        <td>
+                          12.90€
+                        </td>
+                        <td>
+                          <button class="checkout-cancel">
+                            <i class="icon-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Out Of Exile <span>Audioslave</span>
+                        </td>
+                        <td>
+                          1
+                        </td>
+                        <td>
+                          15.90€
+                        </td>
+                        <td>
+                          <button class="checkout-cancel">
+                            <i class="icon-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Cure For Pain <span>Morphine</span>
+                        </td>
+                        <td>
+                          1
+                        </td>
+                        <td>
+                          11.90€
+                        </td>
+                        <td>
+                          <button class="checkout-cancel">
+                            <i class="icon-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
 
                 </div>
+                <button class="checkout-close md-close"><i class="icon"></i></button>
+
               </div>
-
-
-              <div class="column">
-                <button class="md-trigger hvr-grow" data-modal="modal-1">
-                  <i class="icon-cart"></i>
-                </button>
-              </div>
-
-              <div class="md-overlay"></div>
-
-
-
             </div>
+
+
+            <div class="column">
+              <button class="md-trigger hvr-grow" data-modal="modal-1">
+                <i class="icon-cart"></i>
+              </button>
+            </div>
+
+            <div class="md-overlay"></div>
+
+
+
           </div>
-        </section>
+      </div>
+      </section>
 
 
 
@@ -430,7 +435,7 @@
               </li>
             </ul>
 
-            <ul>
+            <ul class="hidden-xs">
               <li>
                 <a href="inicio.html" class="hvr-overline-from-center">
 							Iniciar Sessão

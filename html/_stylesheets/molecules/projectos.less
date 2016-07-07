@@ -9,17 +9,74 @@
 		text-align: center;
 		button{
 			font-family: fontDyane, "Ubuntu", Light;
-			font-size: 16px;
+			font-size: 12px;
 			font-weight: lighter;
 			border: 1px solid black;
 			background-color: white;
 			color: black;
 			height: 30px;
-			letter-spacing: 2px;
+			letter-spacing: 1px;
 			padding-left: 25px;
 			padding-right: 25px;
 			margin-right: 35px;
 			outline: none;
+			display: block;
+			margin: 0 auto;
+			min-width: 150px;
+			margin-bottom: 10px;
+
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+
+			@media only screen and (min-width:@screen-xs){
+				font-size: 13px;
+				letter-spacing: 1.1px;
+				margin-bottom: 10px;
+				min-width: 0;
+				width: auto;
+				margin-right: 15px;
+				display: inline-block;
+
+
+				&:last-of-type{
+					margin-right: 0;
+					margin-bottom: 10px;
+				}
+
+			}
+
+			@media only screen and (min-width:@screen-sm){
+				font-size: 14px;
+				letter-spacing: 1.4px;
+				display: inline-block;
+				margin-bottom: 0;
+				min-width: 0;
+				width: auto;
+				margin-right: 10px;
+
+				&:last-of-type{
+					margin-right: 0;
+					margin-bottom: 0;
+				}
+
+			}
+
+			@media only screen and (min-width:@screen-md){
+				font-size: 15px;
+				letter-spacing: 1.5px;
+				display: inline-block;
+				margin-right: 20px;
+
+			}
+
+			@media only screen and (min-width:@screen-lg){
+				font-size: 16px;
+				letter-spacing: 2px;
+				margin-right: 35px;
+
+			}
+
 
 			&:hover{
 				color: white;
@@ -33,147 +90,151 @@
 		}
 	}
 
+	.mr{
+		padding-right: 15px;
 
-	.proj{
-
-		@media only screen and (max-width : @screen-xs-max) {
-			width: 50%;
-			min-width: 235px;
-			margin: 0 auto;
+		@media only screen and (min-width: @screen-sm){
+			padding-right: 0;
 		}
 
+		.proj{
 
-		.projectos-detail{
-			color: black;
-			border: 1px solid black;
-			text-align: center;
-			padding-bottom: 60px;
-			margin-bottom: 60px;
-			margin-right: 0;
-			display: block;	
-		}
-
-
-		.project-image{
-
-			position: relative;
-			height: 185px;
-			overflow: hidden;
-			margin-bottom: 35px;
-
-			@media only screen and (min-width : @screen-xs) {
-				height: 245px;
+			@media only screen and (max-width : @screen-xs-max) {
+				width: 50%;
+				min-width: 235px;
+				margin: 0 auto;
 			}
 
-			img{
-				width: 100%;
-				height: 100%;
 
-
+			.projectos-detail{
+				color: black;
+				border: 1px solid black;
+				text-align: center;
+				padding-bottom: 60px;
+				margin-bottom: 60px;
+				margin-right: 0;
+				display: block;	
 			}
-		}
 
 
-		h1{    
-			font-size: 18px;
-			line-height: 22px;
-			margin-top: 0;
-			margin-bottom: 0;
+			.project-image{
 
-			@media only screen and (min-width: @screen-sm){
-				font-size: 22px;
-			}
-			&:before{
-				content: '';
-				background: url(../_images/icons/triangle1.png) no-repeat;
-				background-size: contain;
-				display: block;
-				position: absolute;
-				top: 140px;
-				left: 50%;
-				max-width: 90px;
-				width: 100%;
-				max-height: 90px;
-				height: 100%;
-				-webkit-transform: rotate(180deg) translateX(50%);
-				transform: translateX(-50%);
+				position: relative;
+				height: 185px;
+				overflow: hidden;
+				margin-bottom: 35px;
 
-				@media only screen and (min-width: @screen-xs) {
-					top: 200px;
+				@media only screen and (min-width : @screen-xs) {
+					height: 245px;
 				}
-				
 
-			}
-		}
-
-		hr{
-			width: 50px;
-			border-bottom: 1px solid #6f6a6a;
-			margin: 22px auto;
-		}
+				img{
+					width: 100%;
+					height: 100%;
 
 
-
-		p{
-			text-transform: uppercase;
-			font-size: 16px;
-			font-weight: lighter;
-			color: #6f6a6a;
-			margin-bottom: 0;
-
-			@media only screen and (min-width: @screen-sm){
-				font-size: 20px;
+				}
 			}
 
-			&:before{
-				content: '';
-				position: absolute;
-				bottom: -15px;
-				left: 50%;
-				width: 130px;
-				height: 30px;
-				translateX: 50%;
-				color: white;
-				-webkit-transform: translateX(-50%);
-				transform: translateX(-50%);
-				background-color: white;
+
+			h1{    
+				font-size: 18px;
+				line-height: 22px;
+				margin-top: 0;
+				margin-bottom: 0;
 
 				@media only screen and (min-width: @screen-sm){
-					bottom: 45px;
-					width: 160px;
+					font-size: 22px;
+				}
+				&:before{
+					content: '';
+					background: url(../_images/icons/triangle1.png) no-repeat;
+					background-size: contain;
+					display: block;
+					position: absolute;
+					top: 140px;
+					left: 50%;
+					max-width: 90px;
+					width: 100%;
+					max-height: 90px;
+					height: 100%;
+					-webkit-transform: rotate(180deg) translateX(50%);
+					transform: translateX(-50%);
+
+					@media only screen and (min-width: @screen-xs) {
+						top: 200px;
+					}
+
+
+				}
+			}
+
+			hr{
+				width: 50px;
+				border-bottom: 1px solid #6f6a6a;
+				margin: 22px auto;
+			}
+
+
+
+			p{
+				text-transform: uppercase;
+				font-size: 16px;
+				font-weight: lighter;
+				color: #6f6a6a;
+				margin-bottom: 0;
+
+				@media only screen and (min-width: @screen-sm){
+					font-size: 20px;
 				}
 
-				// @media only screen and (min-width: @screen-md){
-				// 	width: 160px;
-				// }
+				&:before{
+					content: '';
+					position: absolute;
+					bottom: -15px;
+					left: 50%;
+					width: 130px;
+					height: 30px;
+					translateX: 50%;
+					color: white;
+					-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
+					background-color: white;
 
-				@media only screen and (min-width: @screen-lg){
-					width: 270px;
+					@media only screen and (min-width: @screen-sm){
+						bottom: 45px;
+						width: 160px;
+					}
+
+					@media only screen and (min-width: @screen-lg){
+						width: 270px;
+					}
 				}
 			}
-		}
 
-		a{
-			text-decoration: none;
-			position: absolute;
-			color: black;
-			font-weight: lighter;
-			font-size: 20px;
-			line-height: 30px;
-			top: 356px;
-			left: 41%;
+			a{
+				text-decoration: none;
+				position: absolute;
+				color: black;
+				font-weight: lighter;
+				font-size: 20px;
+				line-height: 30px;
+				top: 356px;
+				left: 41%;
 
-			@media only screen and (min-width: @screen-xs){
-				top: 415px;
-				left: 43%;
+				@media only screen and (min-width: @screen-xs){
+					top: 415px;
+					left: 43%;
+				}
+
+				@media only screen and (min-width: @screen-sm){
+					font-size: 24px;
+				}
+
 			}
-
-			@media only screen and (min-width: @screen-sm){
-				font-size: 24px;
-			}
-
 		}
 	}
+
 }
 
 

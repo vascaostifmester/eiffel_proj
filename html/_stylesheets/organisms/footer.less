@@ -1,6 +1,10 @@
 .footer {
-	min-height: 220px;
-	padding-bottom: 40px;
+	
+	padding-bottom: 30px;
+
+	@media only screen and (min-width:@screen-sm){
+		padding-bottom: 40px;
+	}
 
 	.container {
 		.social {
@@ -12,15 +16,23 @@
 				color: black;
 				text-align: center;
 				margin-top: 35px;
-				margin-bottom:15px;
+				margin-bottom:7px;
 				text-transform: uppercase;
 				font-weight: lighter;
+
+				@media only screen and (min-width:@screen-sm){
+					margin-bottom:15px;
+				}
 
 			}
 
 			ul{
-				margin: 0 auto 30px;
+				margin: 0 auto 15px;
 				text-align: center;
+
+				@media only screen and (min-width:@screen-sm){
+					margin: 0 auto 30px;
+				}
 
 				li{
 					display: inline-block;

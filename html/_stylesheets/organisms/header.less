@@ -1,47 +1,113 @@
 .headerini {
 	
 	min-height: 220px;
-    padding-top: 40px;
-    overflow: hidden;
-    position: relative;
+	padding-top: 40px;
+	overflow: hidden;
+	position: relative;
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
 
 	.container {
 		.row{
+
+			.logo{
+				text-align: center;
+				padding-top: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-xs){
+					padding-top: 20px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					text-align: left;
+					padding-top: 0;
+					padding-right: 15px;
+				}
+			}
+
+
 			.menu{
 
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				padding-top: 90px;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-sm){
+					padding: 60px 0 0 0;
+				}
+
+				@media only screen and (min-width:@screen-md){
+					padding-top: 90px;
+					padding-bottom: 0;
+					padding-right: 15px;
+				}
+
+				// @media only screen and (min-width:@screen-lg){
+
+				// }
 
 				ul{
+					padding-left: 0;
 					margin: 0 auto;
 					li{
 						font-family: fontDyane, "Ubuntu", Light;
 						font-weight: lighter;
-						display: inline-block;
-						margin-right: 40px;
+						display: block;
+						opacity: 1;
+						background-color: #e1e1e1;
+						margin-bottom: 5px;
 
 						&:last-of-type{
 							margin-right: 0;
 						}
 
+						@media only screen and (min-width:@screen-sm){
+							margin-right: 20px;
+							display: inline-block;
+							margin-bottom: 0;
+							background-color: white;
+						}
+						
+						@media only screen and (min-width:@screen-md){
+							margin-right: 30px;
+						}
+
+						@media only screen and (min-width:@screen-lg){
+							margin-right: 40px;
+						}
+
+						
+
 						a{
 							color: black;
-							font-size: 20px;
+							font-size: 14px;
 							text-transform: uppercase;
 							text-decoration: none;
 							line-height: 30px;
-							letter-spacing: 1px;
+							letter-spacing: 0.5px;
 
+							@media only screen and (min-width:@screen-sm){
+								letter-spacing: 0.6px;
+							}
 
-							// &:hover{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-md){
+								font-size: 17px;
+								letter-spacing: 0.7px;
+							}
 
-							// &:active{
-							// 	border-bottom: 2px dotted #910710;
-							// }
-
+							@media only screen and (min-width:@screen-lg){
+								font-size: 20px;
+								letter-spacing: 1px;
+							}
 						}
 					}
 				}
@@ -50,83 +116,72 @@
 				
 			}
 
-			// .nav{
-			// 	position: absolute;
-			// 	right: 0;
-			// 	width: 400px;
-			// 	height: 50px;
-			// 	margin: 0;
-
-			// 	a{
-			// 		color: black;	
-			// 		display: none
-			// 	}
-
-
-
-			// 	.icon{
-			// 		width: 50px;
-			// 		height: 50px;
-			// 		background-color: black;
-			// 		position: absolute;
-			// 		right: 20px;
-			// 		top: 0;
-			// 		z-index: 10;
-
-			// 		&:hover{
-			// 			a{
-			// 				display: block;
-			// 				position: absolute;
-			// 				right: 55px;
-			// 				height: 50px;
-			// 				width: 170px;
-			// 				text-align: center;
-			// 				padding-top: 14px;
-			// 				background-color: white;
-			// 				border: 1px solid black;
-			// 			}
-			// 		}
-			// 	}
-			// }
-
 			.nav{
 				background-color: #e1e1e1;
 				margin-bottom: 0;
 				position: absolute;
-				right: -110px;
-				top: -110px;
+				right: 49%;
+				top: -150px;
 				height: 20px;
-				height: 230px;
-				width: 230px;
+				transform: translateX(52%);
+				height: 220px;
+				width: 220px;
 				border-radius: 160px;
 				z-index: 3;
 
+				@media only screen and (min-width: @screen-md){
+					right: -110px;
+					top: -110px;
+					height: 230px;
+					width: 230px;
+					transform: translateX(0%)
+				}
+
 				.icon{
 					position: absolute;
-					top: 170px;
-					left: 54px;
+					top: 190px;
+					left: 50%;
+					transform: translateX(-50%);
 
+					@media only screen and (min-width: @screen-md){
+						top: 170px;
+						left: 54px;
+						transform: translateX(0%);
+					}
+					
 					a{
 						font-family: fontDyane, "Ubuntu", Light;
 						color: black;
-						font-size: 11px;
+						font-size: 10px;
 						text-transform: uppercase;
-						line-height: 11px;
+						line-height: 10px;
 						letter-spacing: 3px;
 						display: block;
 						text-align: center;
 						margin-top: 6px;
+
+						@media only screen and (min-width: @screen-md){
+							font-size: 11px;
+							line-height: 11px;
+						}
 
 						&:before{
 							content: '';
 							background: url(../_images/icons/user.png) no-repeat;
 							background-size: contain;
 							background-position: center;
-							height: 50px;
-							width: 50px;
+							height: 40px;
+							width: 40px;
 							position: absolute;
-							top: -47px;
-							left: 3px;
+							top: -40px;
+							left: 6px;
+
+							@media only screen and (min-width: @screen-md){
+								height: 50px;
+								width: 50px;
+								top: -47px;
+								left: 3px;
+							}
 						}
 					}
 				}	
@@ -137,13 +192,28 @@
 				height: 100%;
 				width: 70%;
 
+				@media only screen and (min-width:@screen-xs){
+					max-width:255px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					width:80%;
+					max-width:80%;
+
+				}
+
+				@media only screen and (min-width:@screen-lg){
+					width:70%;
+					max-width:70%;
+				}
+
 			}
 		}
 	}
 }
 
 .headerdetail {
-	
+
 	min-height: 220px;
 	padding-top: 40px;
 	background: url(../_images/fusco1.png) no-repeat;
