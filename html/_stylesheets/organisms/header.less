@@ -71,7 +71,7 @@
 						}
 
 						@media only screen and (min-width:@screen-sm){
-							margin-right: 20px;
+							margin-right: 15px;
 							display: inline-block;
 							margin-bottom: 0;
 							background-color: white;
@@ -211,50 +211,126 @@
 		}
 	}
 }
-
+	
 .headerdetail {
-
+	
 	min-height: 220px;
 	padding-top: 40px;
-	background: url(../_images/fusco1.png) no-repeat;
-	background-size: cover;
-	background-position: center 59%;
+	overflow: hidden;
+	position: relative;
+	background-color: #e1e1e1;
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+		background: url(../_images/fusco1.png) no-repeat;
+		background-size: cover;
+		background-position: center 59%;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
 	.container {
 		.row{
+
+			.logo{
+				text-align: center;
+				padding-top: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-xs){
+					padding-top: 20px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					text-align: left;
+					padding-top: 0;
+					padding-right: 15px;
+				}
+			}
+
+
 			.menu{
 
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				padding-top: 90px;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-sm){
+					padding: 60px 0 0 0;
+				}
+
+				@media only screen and (min-width:@screen-md){
+					padding-top: 90px;
+					padding-bottom: 0;
+					padding-right: 15px;
+				}
+
 
 				ul{
+					padding-left: 0;
 					margin: 0 auto;
 					li{
 						font-family: fontDyane, "Ubuntu", Light;
 						font-weight: lighter;
-						display: inline-block;
-						margin-right: 40px;
+						display: block;
+						opacity: 1;
+						background-color: white;
+						margin-bottom: 5px;
 
 						&:last-of-type{
 							margin-right: 0;
 						}
 
+						@media only screen and (min-width:@screen-sm){
+							margin-right: 15px;
+							display: inline-block;
+							margin-bottom: 0;
+							background-color: transparent;
+						}
+						
+						@media only screen and (min-width:@screen-md){
+							margin-right: 30px;
+						}
+
+						@media only screen and (min-width:@screen-lg){
+							margin-right: 40px;
+						}
+
+						
+
 						a{
 							color: black;
-							font-size: 20px;
+							font-size: 14px;
 							text-transform: uppercase;
 							text-decoration: none;
 							line-height: 30px;
-							letter-spacing: 1px;
+							letter-spacing: 0.5px;
 
-							// &:hover{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-sm){
+								letter-spacing: 0.6px;
+							}
 
-							// &:active{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-md){
+								font-size: 17px;
+								letter-spacing: 0.7px;
+							}
 
+							@media only screen and (min-width:@screen-lg){
+								font-size: 20px;
+								letter-spacing: 1px;
+							}
 						}
 					}
 				}
@@ -264,51 +340,95 @@
 			}
 
 			.nav{
-				background-color: #e1e1e1;
+				background-color: white;
 				margin-bottom: 0;
 				position: absolute;
-				right: 5px;
-				top: 5px;
-				height: 65px;
-				width: 260px;
-				transition: all 0.5s ease-in-out;
-				-webkit-transition: all 0.5s ease-in-out;
+				right: 49%;
+				top: -150px;
+				height: 20px;
+				transform: translateX(52%);
+				height: 220px;
+				width: 220px;
+				border-radius: 160px;
+				z-index: 3;
 
-				&:hover{
-					right: 5px;
-					top: 5px;
-					transition: all 0.5s ease-in-out;
-					-webkit-transition: all 0.5s ease-in-out;
+				@media only screen and (min-width: @screen-md){
+					right: -110px;
+					top: -110px;
+					height: 230px;
+					width: 230px;
+					transform: translateX(0%)
 				}
 
-				a{
-					font-family: fontDyane, "Ubuntu", Light;
-					font-weight: lighter;
-					color: black;
-					text-decoration: none;
+				.icon{
 					position: absolute;
-					bottom: 20px;
-					right: 40%;
+					top: 190px;
+					left: 50%;
+					transform: translateX(-50%);
 
-					&:before{
-						content: '';
-						background: url(../_images/icons/user.png) no-repeat;
-						background-size: contain;
-						background-position: center;
-						display: block;
-						height: 40px;
-						width: 40px;
-						position: relative;
-						top: 30px;
-						right: -84px;
+					@media only screen and (min-width: @screen-md){
+						top: 170px;
+						left: 54px;
+						transform: translateX(0%);
 					}
-				}
+					
+					a{
+						font-family: fontDyane, "Ubuntu", Light;
+						color: black;
+						font-size: 10px;
+						text-transform: uppercase;
+						line-height: 10px;
+						letter-spacing: 3px;
+						display: block;
+						text-align: center;
+						margin-top: 6px;
+
+						@media only screen and (min-width: @screen-md){
+							font-size: 11px;
+							line-height: 11px;
+						}
+
+						&:before{
+							content: '';
+							background: url(../_images/icons/user.png) no-repeat;
+							background-size: contain;
+							background-position: center;
+							height: 40px;
+							width: 40px;
+							position: absolute;
+							top: -40px;
+							left: 6px;
+
+							@media only screen and (min-width: @screen-md){
+								height: 50px;
+								width: 50px;
+								top: -47px;
+								left: 3px;
+							}
+						}
+					}
+				}	
 			}
 
 
 			img{
 				height: 100%;
 				width: 70%;
+
+				@media only screen and (min-width:@screen-xs){
+					max-width:255px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					width:80%;
+					max-width:80%;
+
+				}
+
+				@media only screen and (min-width:@screen-lg){
+					width:70%;
+					max-width:70%;
+				}
 
 			}
 		}
@@ -319,45 +439,121 @@
 	
 	min-height: 220px;
 	padding-top: 40px;
-	background: url(../_images/fusco3.png) no-repeat;
-	background-size: cover;
-	background-position: center 40%;
+	overflow: hidden;
+	position: relative;
+	background-color: #e1e1e1;
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+		background: url(../_images/fusco3.png) no-repeat;
+		background-size: cover;
+		background-position: center 40%;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
 	.container {
 		.row{
+
+			.logo{
+				text-align: center;
+				padding-top: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-xs){
+					padding-top: 20px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					text-align: left;
+					padding-top: 0;
+					padding-right: 15px;
+				}
+			}
+
+
 			.menu{
 
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				padding-top: 90px;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-sm){
+					padding: 60px 0 0 0;
+				}
+
+				@media only screen and (min-width:@screen-md){
+					padding-top: 90px;
+					padding-bottom: 0;
+					padding-right: 15px;
+				}
+
 
 				ul{
+					padding-left: 0;
 					margin: 0 auto;
 					li{
 						font-family: fontDyane, "Ubuntu", Light;
 						font-weight: lighter;
-						display: inline-block;
-						margin-right: 40px;
+						display: block;
+						opacity: 1;
+						background-color: white;
+						margin-bottom: 5px;
 
 						&:last-of-type{
 							margin-right: 0;
 						}
 
+						@media only screen and (min-width:@screen-sm){
+							margin-right: 15px;
+							display: inline-block;
+							margin-bottom: 0;
+							background-color: transparent;
+						}
+						
+						@media only screen and (min-width:@screen-md){
+							margin-right: 30px;
+						}
+
+						@media only screen and (min-width:@screen-lg){
+							margin-right: 40px;
+						}
+
+						
+
 						a{
 							color: black;
-							font-size: 20px;
+							font-size: 14px;
 							text-transform: uppercase;
 							text-decoration: none;
 							line-height: 30px;
-							letter-spacing: 1px;
+							letter-spacing: 0.5px;
 
-							// &:hover{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-sm){
+								letter-spacing: 0.6px;
+							}
 
-							// &:active{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-md){
+								font-size: 17px;
+								letter-spacing: 0.7px;
+							}
 
+							@media only screen and (min-width:@screen-lg){
+								font-size: 20px;
+								letter-spacing: 1px;
+							}
 						}
 					}
 				}
@@ -367,37 +563,95 @@
 			}
 
 			.nav{
-				background-color: #910710;
+				background-color: white;
 				margin-bottom: 0;
 				position: absolute;
-				right: -110px;
-				top: -110px;
+				right: 49%;
+				top: -150px;
 				height: 20px;
-				height: 230px;
-				width: 230px;
+				transform: translateX(52%);
+				height: 220px;
+				width: 220px;
 				border-radius: 160px;
+				z-index: 3;
 
-				a{
-					font-family: fontDyane, "Ubuntu", Light;
-					color: gray;
-					font-size: 9px;
-					text-transform: uppercase;
-					line-height: 9px;
-					letter-spacing: 1px;
-					display: block;
-					text-align: center;
-					margin-top: 6px;
-
-					@media only screen and (min-width : @screen-sm) {
-						text-align: right;
-					}
+				@media only screen and (min-width: @screen-md){
+					right: -110px;
+					top: -110px;
+					height: 230px;
+					width: 230px;
+					transform: translateX(0%)
 				}
+
+				.icon{
+					position: absolute;
+					top: 190px;
+					left: 50%;
+					transform: translateX(-50%);
+
+					@media only screen and (min-width: @screen-md){
+						top: 170px;
+						left: 54px;
+						transform: translateX(0%);
+					}
+					
+					a{
+						font-family: fontDyane, "Ubuntu", Light;
+						color: black;
+						font-size: 10px;
+						text-transform: uppercase;
+						line-height: 10px;
+						letter-spacing: 3px;
+						display: block;
+						text-align: center;
+						margin-top: 6px;
+
+						@media only screen and (min-width: @screen-md){
+							font-size: 11px;
+							line-height: 11px;
+						}
+
+						&:before{
+							content: '';
+							background: url(../_images/icons/user.png) no-repeat;
+							background-size: contain;
+							background-position: center;
+							height: 40px;
+							width: 40px;
+							position: absolute;
+							top: -40px;
+							left: 6px;
+
+							@media only screen and (min-width: @screen-md){
+								height: 50px;
+								width: 50px;
+								top: -47px;
+								left: 3px;
+							}
+						}
+					}
+				}	
 			}
 
 
 			img{
 				height: 100%;
 				width: 70%;
+
+				@media only screen and (min-width:@screen-xs){
+					max-width:255px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					width:80%;
+					max-width:80%;
+
+				}
+
+				@media only screen and (min-width:@screen-lg){
+					width:70%;
+					max-width:70%;
+				}
 
 			}
 		}
@@ -408,45 +662,121 @@
 	
 	min-height: 220px;
 	padding-top: 40px;
-	background: url(../_images/fusco4.jpg) no-repeat;
-	background-size: cover;
-	background-position: center 20%;
+	overflow: hidden;
+	position: relative;
+	background-color: #e1e1e1;
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+		background: url(../_images/fusco4.jpg) no-repeat;
+		background-size: cover;
+		background-position: center 20%;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
 	.container {
 		.row{
+
+			.logo{
+				text-align: center;
+				padding-top: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-xs){
+					padding-top: 20px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					text-align: left;
+					padding-top: 0;
+					padding-right: 15px;
+				}
+			}
+
+
 			.menu{
 
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				padding-top: 90px;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-sm){
+					padding: 60px 0 0 0;
+				}
+
+				@media only screen and (min-width:@screen-md){
+					padding-top: 90px;
+					padding-bottom: 0;
+					padding-right: 15px;
+				}
+
 
 				ul{
+					padding-left: 0;
 					margin: 0 auto;
 					li{
 						font-family: fontDyane, "Ubuntu", Light;
 						font-weight: lighter;
-						display: inline-block;
-						margin-right: 40px;
+						display: block;
+						opacity: 1;
+						background-color: white;
+						margin-bottom: 5px;
 
 						&:last-of-type{
 							margin-right: 0;
 						}
 
+						@media only screen and (min-width:@screen-sm){
+							margin-right: 15px;
+							display: inline-block;
+							margin-bottom: 0;
+							background-color: transparent;
+						}
+						
+						@media only screen and (min-width:@screen-md){
+							margin-right: 30px;
+						}
+
+						@media only screen and (min-width:@screen-lg){
+							margin-right: 40px;
+						}
+
+						
+
 						a{
 							color: black;
-							font-size: 20px;
+							font-size: 14px;
 							text-transform: uppercase;
 							text-decoration: none;
 							line-height: 30px;
-							letter-spacing: 1px;
+							letter-spacing: 0.5px;
 
-							// &:hover{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-sm){
+								letter-spacing: 0.6px;
+							}
 
-							// &:active{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-md){
+								font-size: 17px;
+								letter-spacing: 0.7px;
+							}
 
+							@media only screen and (min-width:@screen-lg){
+								font-size: 20px;
+								letter-spacing: 1px;
+							}
 						}
 					}
 				}
@@ -459,49 +789,92 @@
 				background-color: white;
 				margin-bottom: 0;
 				position: absolute;
-				right: -110px;
-				top: -110px;
+				right: 49%;
+				top: -150px;
 				height: 20px;
-				height: 230px;
-				width: 230px;
+				transform: translateX(52%);
+				height: 220px;
+				width: 220px;
 				border-radius: 160px;
+				z-index: 3;
+
+				@media only screen and (min-width: @screen-md){
+					right: -110px;
+					top: -110px;
+					height: 230px;
+					width: 230px;
+					transform: translateX(0%)
+				}
 
 				.icon{
 					position: absolute;
-					top: 170px;
-					left: 54px;
+					top: 190px;
+					left: 50%;
+					transform: translateX(-50%);
 
+					@media only screen and (min-width: @screen-md){
+						top: 170px;
+						left: 54px;
+						transform: translateX(0%);
+					}
+					
 					a{
 						font-family: fontDyane, "Ubuntu", Light;
 						color: black;
-						font-size: 11px;
+						font-size: 10px;
 						text-transform: uppercase;
-						line-height: 11px;
+						line-height: 10px;
 						letter-spacing: 3px;
 						display: block;
 						text-align: center;
 						margin-top: 6px;
+
+						@media only screen and (min-width: @screen-md){
+							font-size: 11px;
+							line-height: 11px;
+						}
 
 						&:before{
 							content: '';
 							background: url(../_images/icons/user.png) no-repeat;
 							background-size: contain;
 							background-position: center;
-							height: 50px;
-							width: 50px;
+							height: 40px;
+							width: 40px;
 							position: absolute;
-							top: -42px;
-							left: 3px;
+							top: -40px;
+							left: 6px;
+
+							@media only screen and (min-width: @screen-md){
+								height: 50px;
+								width: 50px;
+								top: -47px;
+								left: 3px;
+							}
 						}
 					}
 				}	
 			}
 
 
-
 			img{
 				height: 100%;
 				width: 70%;
+
+				@media only screen and (min-width:@screen-xs){
+					max-width:255px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					width:80%;
+					max-width:80%;
+
+				}
+
+				@media only screen and (min-width:@screen-lg){
+					width:70%;
+					max-width:70%;
+				}
 
 			}
 		}
@@ -512,45 +885,121 @@
 	
 	min-height: 220px;
 	padding-top: 40px;
-	background: url(../_images/fusco5.png) no-repeat;
-	background-size: cover;
-	background-position: center 13%;
+	overflow: hidden;
+	position: relative;
+	background-color: #e1e1e1;
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+		background: url(../_images/fusco5.png) no-repeat;
+		background-size: cover;
+		background-position: center 13%;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
 	.container {
 		.row{
+
+			.logo{
+				text-align: center;
+				padding-top: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-xs){
+					padding-top: 20px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					text-align: left;
+					padding-top: 0;
+					padding-right: 15px;
+				}
+			}
+
+
 			.menu{
 
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				padding-top: 90px;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-sm){
+					padding: 60px 0 0 0;
+				}
+
+				@media only screen and (min-width:@screen-md){
+					padding-top: 90px;
+					padding-bottom: 0;
+					padding-right: 15px;
+				}
+
 
 				ul{
+					padding-left: 0;
 					margin: 0 auto;
 					li{
 						font-family: fontDyane, "Ubuntu", Light;
 						font-weight: lighter;
-						display: inline-block;
-						margin-right: 40px;
+						display: block;
+						opacity: 1;
+						background-color: white;
+						margin-bottom: 5px;
 
 						&:last-of-type{
 							margin-right: 0;
 						}
 
+						@media only screen and (min-width:@screen-sm){
+							margin-right: 15px;
+							display: inline-block;
+							margin-bottom: 0;
+							background-color: transparent;
+						}
+						
+						@media only screen and (min-width:@screen-md){
+							margin-right: 30px;
+						}
+
+						@media only screen and (min-width:@screen-lg){
+							margin-right: 40px;
+						}
+
+						
+
 						a{
 							color: black;
-							font-size: 20px;
+							font-size: 14px;
 							text-transform: uppercase;
 							text-decoration: none;
 							line-height: 30px;
-							letter-spacing: 1px;
+							letter-spacing: 0.5px;
 
-							// &:hover{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-sm){
+								letter-spacing: 0.6px;
+							}
 
-							// &:active{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-md){
+								font-size: 17px;
+								letter-spacing: 0.7px;
+							}
 
+							@media only screen and (min-width:@screen-lg){
+								font-size: 20px;
+								letter-spacing: 1px;
+							}
 						}
 					}
 				}
@@ -563,39 +1012,68 @@
 				background-color: white;
 				margin-bottom: 0;
 				position: absolute;
-				right: -110px;
-				top: -110px;
+				right: 49%;
+				top: -150px;
 				height: 20px;
-				height: 230px;
-				width: 230px;
+				transform: translateX(52%);
+				height: 220px;
+				width: 220px;
 				border-radius: 160px;
+				z-index: 3;
+
+				@media only screen and (min-width: @screen-md){
+					right: -110px;
+					top: -110px;
+					height: 230px;
+					width: 230px;
+					transform: translateX(0%)
+				}
 
 				.icon{
 					position: absolute;
-					top: 170px;
-					left: 54px;
+					top: 190px;
+					left: 50%;
+					transform: translateX(-50%);
 
+					@media only screen and (min-width: @screen-md){
+						top: 170px;
+						left: 54px;
+						transform: translateX(0%);
+					}
+					
 					a{
 						font-family: fontDyane, "Ubuntu", Light;
 						color: black;
-						font-size: 11px;
+						font-size: 10px;
 						text-transform: uppercase;
-						line-height: 11px;
+						line-height: 10px;
 						letter-spacing: 3px;
 						display: block;
 						text-align: center;
 						margin-top: 6px;
+
+						@media only screen and (min-width: @screen-md){
+							font-size: 11px;
+							line-height: 11px;
+						}
 
 						&:before{
 							content: '';
 							background: url(../_images/icons/user.png) no-repeat;
 							background-size: contain;
 							background-position: center;
-							height: 50px;
-							width: 50px;
+							height: 40px;
+							width: 40px;
 							position: absolute;
-							top: -42px;
-							left: 3px;
+							top: -40px;
+							left: 6px;
+
+							@media only screen and (min-width: @screen-md){
+								height: 50px;
+								width: 50px;
+								top: -47px;
+								left: 3px;
+							}
 						}
 					}
 				}	
@@ -605,6 +1083,21 @@
 			img{
 				height: 100%;
 				width: 70%;
+
+				@media only screen and (min-width:@screen-xs){
+					max-width:255px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					width:80%;
+					max-width:80%;
+
+				}
+
+				@media only screen and (min-width:@screen-lg){
+					width:70%;
+					max-width:70%;
+				}
 
 			}
 		}
@@ -615,45 +1108,121 @@
 	
 	min-height: 220px;
 	padding-top: 40px;
-	background: url(../_images/fusco6.png) no-repeat;
-	background-size: cover;
-	background-position: center 75%;
+	overflow: hidden;
+	position: relative;
+	background-color: #e1e1e1;
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+		background: url(../_images/fusco6.png) no-repeat;
+		background-size: cover;
+		background-position: center 75%;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
 	.container {
 		.row{
+
+			.logo{
+				text-align: center;
+				padding-top: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-xs){
+					padding-top: 20px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					text-align: left;
+					padding-top: 0;
+					padding-right: 15px;
+				}
+			}
+
+
 			.menu{
 
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				padding-top: 90px;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-sm){
+					padding: 60px 0 0 0;
+				}
+
+				@media only screen and (min-width:@screen-md){
+					padding-top: 90px;
+					padding-bottom: 0;
+					padding-right: 15px;
+				}
+
 
 				ul{
+					padding-left: 0;
 					margin: 0 auto;
 					li{
 						font-family: fontDyane, "Ubuntu", Light;
 						font-weight: lighter;
-						display: inline-block;
-						margin-right: 40px;
+						display: block;
+						opacity: 1;
+						background-color: white;
+						margin-bottom: 5px;
 
 						&:last-of-type{
 							margin-right: 0;
 						}
 
+						@media only screen and (min-width:@screen-sm){
+							margin-right: 15px;
+							display: inline-block;
+							margin-bottom: 0;
+							background-color: transparent;
+						}
+						
+						@media only screen and (min-width:@screen-md){
+							margin-right: 30px;
+						}
+
+						@media only screen and (min-width:@screen-lg){
+							margin-right: 40px;
+						}
+
+						
+
 						a{
 							color: black;
-							font-size: 20px;
+							font-size: 14px;
 							text-transform: uppercase;
 							text-decoration: none;
 							line-height: 30px;
-							letter-spacing: 1px;
+							letter-spacing: 0.5px;
 
-							// &:hover{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-sm){
+								letter-spacing: 0.6px;
+							}
 
-							// &:active{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-md){
+								font-size: 17px;
+								letter-spacing: 0.7px;
+							}
 
+							@media only screen and (min-width:@screen-lg){
+								font-size: 20px;
+								letter-spacing: 1px;
+							}
 						}
 					}
 				}
@@ -666,49 +1235,92 @@
 				background-color: white;
 				margin-bottom: 0;
 				position: absolute;
-				right: -110px;
-				top: -110px;
+				right: 49%;
+				top: -150px;
 				height: 20px;
-				height: 230px;
-				width: 230px;
+				transform: translateX(52%);
+				height: 220px;
+				width: 220px;
 				border-radius: 160px;
+				z-index: 3;
+
+				@media only screen and (min-width: @screen-md){
+					right: -110px;
+					top: -110px;
+					height: 230px;
+					width: 230px;
+					transform: translateX(0%)
+				}
 
 				.icon{
 					position: absolute;
-					top: 170px;
-					left: 54px;
+					top: 190px;
+					left: 50%;
+					transform: translateX(-50%);
 
+					@media only screen and (min-width: @screen-md){
+						top: 170px;
+						left: 54px;
+						transform: translateX(0%);
+					}
+					
 					a{
 						font-family: fontDyane, "Ubuntu", Light;
 						color: black;
-						font-size: 11px;
+						font-size: 10px;
 						text-transform: uppercase;
-						line-height: 11px;
+						line-height: 10px;
 						letter-spacing: 3px;
 						display: block;
 						text-align: center;
 						margin-top: 6px;
+
+						@media only screen and (min-width: @screen-md){
+							font-size: 11px;
+							line-height: 11px;
+						}
 
 						&:before{
 							content: '';
 							background: url(../_images/icons/user.png) no-repeat;
 							background-size: contain;
 							background-position: center;
-							height: 50px;
-							width: 50px;
+							height: 40px;
+							width: 40px;
 							position: absolute;
-							top: -42px;
-							left: 3px;
+							top: -40px;
+							left: 6px;
+
+							@media only screen and (min-width: @screen-md){
+								height: 50px;
+								width: 50px;
+								top: -47px;
+								left: 3px;
+							}
 						}
 					}
 				}	
 			}
 
 
-
 			img{
 				height: 100%;
 				width: 70%;
+
+				@media only screen and (min-width:@screen-xs){
+					max-width:255px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					width:80%;
+					max-width:80%;
+
+				}
+
+				@media only screen and (min-width:@screen-lg){
+					width:70%;
+					max-width:70%;
+				}
 
 			}
 		}
@@ -719,45 +1331,121 @@
 	
 	min-height: 220px;
 	padding-top: 40px;
-	background: url(../_images/fusco7.png) no-repeat;
-	background-size: cover;
-	background-position: center 50%;
+	overflow: hidden;
+	position: relative;
+	background-color: #e1e1e1;
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
+	@media only screen and (min-width:@screen-sm){
+		min-height: 165px;
+		background: url(../_images/fusco7.png) no-repeat;
+		background-size: cover;
+		background-position: center 50%;
+	}
+
+	@media only screen and (min-width:@screen-md){
+		min-height: 220px;
+	}
+
 	.container {
 		.row{
+
+			.logo{
+				text-align: center;
+				padding-top: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-xs){
+					padding-top: 20px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					text-align: left;
+					padding-top: 0;
+					padding-right: 15px;
+				}
+			}
+
+
 			.menu{
 
-				text-align: right;
+				text-align: center;
 				margin: 0 auto;
-				padding-top: 90px;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				padding-right: 30px;
+
+				@media only screen and (min-width:@screen-sm){
+					padding: 60px 0 0 0;
+				}
+
+				@media only screen and (min-width:@screen-md){
+					padding-top: 90px;
+					padding-bottom: 0;
+					padding-right: 15px;
+				}
+
 
 				ul{
+					padding-left: 0;
 					margin: 0 auto;
 					li{
 						font-family: fontDyane, "Ubuntu", Light;
 						font-weight: lighter;
-						display: inline-block;
-						margin-right: 40px;
+						display: block;
+						opacity: 1;
+						background-color: white;
+						margin-bottom: 5px;
 
 						&:last-of-type{
 							margin-right: 0;
 						}
 
+						@media only screen and (min-width:@screen-sm){
+							margin-right: 15px;
+							display: inline-block;
+							margin-bottom: 0;
+							background-color: transparent;
+						}
+						
+						@media only screen and (min-width:@screen-md){
+							margin-right: 30px;
+						}
+
+						@media only screen and (min-width:@screen-lg){
+							margin-right: 40px;
+						}
+
+						
+
 						a{
 							color: black;
-							font-size: 20px;
+							font-size: 14px;
 							text-transform: uppercase;
 							text-decoration: none;
 							line-height: 30px;
-							letter-spacing: 1px;
+							letter-spacing: 0.5px;
 
-							// &:hover{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-sm){
+								letter-spacing: 0.6px;
+							}
 
-							// &:active{
-							// 	border-bottom: 2px dotted #910710;
-							// }
+							@media only screen and (min-width:@screen-md){
+								font-size: 17px;
+								letter-spacing: 0.7px;
+							}
 
+							@media only screen and (min-width:@screen-lg){
+								font-size: 20px;
+								letter-spacing: 1px;
+							}
 						}
 					}
 				}
@@ -770,49 +1458,92 @@
 				background-color: white;
 				margin-bottom: 0;
 				position: absolute;
-				right: -110px;
-				top: -110px;
+				right: 49%;
+				top: -150px;
 				height: 20px;
-				height: 230px;
-				width: 230px;
+				transform: translateX(52%);
+				height: 220px;
+				width: 220px;
 				border-radius: 160px;
+				z-index: 3;
+
+				@media only screen and (min-width: @screen-md){
+					right: -110px;
+					top: -110px;
+					height: 230px;
+					width: 230px;
+					transform: translateX(0%)
+				}
 
 				.icon{
 					position: absolute;
-					top: 170px;
-					left: 54px;
+					top: 190px;
+					left: 50%;
+					transform: translateX(-50%);
 
+					@media only screen and (min-width: @screen-md){
+						top: 170px;
+						left: 54px;
+						transform: translateX(0%);
+					}
+					
 					a{
 						font-family: fontDyane, "Ubuntu", Light;
 						color: black;
-						font-size: 11px;
+						font-size: 10px;
 						text-transform: uppercase;
-						line-height: 11px;
+						line-height: 10px;
 						letter-spacing: 3px;
 						display: block;
 						text-align: center;
 						margin-top: 6px;
+
+						@media only screen and (min-width: @screen-md){
+							font-size: 11px;
+							line-height: 11px;
+						}
 
 						&:before{
 							content: '';
 							background: url(../_images/icons/user.png) no-repeat;
 							background-size: contain;
 							background-position: center;
-							height: 50px;
-							width: 50px;
+							height: 40px;
+							width: 40px;
 							position: absolute;
-							top: -42px;
-							left: 3px;
+							top: -40px;
+							left: 6px;
+
+							@media only screen and (min-width: @screen-md){
+								height: 50px;
+								width: 50px;
+								top: -47px;
+								left: 3px;
+							}
 						}
 					}
 				}	
 			}
 
 
-
 			img{
 				height: 100%;
 				width: 70%;
+
+				@media only screen and (min-width:@screen-xs){
+					max-width:255px;
+				}
+
+				@media only screen and (min-width:@screen-sm){
+					width:80%;
+					max-width:80%;
+
+				}
+
+				@media only screen and (min-width:@screen-lg){
+					width:70%;
+					max-width:70%;
+				}
 
 			}
 		}

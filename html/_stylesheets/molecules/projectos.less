@@ -1,9 +1,37 @@
 .projectos{
-	padding-top: 80px;
+	padding-top: 50px;
 	padding-bottom:20px;
 	font-family: fontDyane, "Ubuntu", Light;
 
+	.carrinho{
+		padding-bottom: 30px;
+		margin: 0 auto;
+		text-align: center;
+		width: 165px; 
+		a{
+			font-family: fontDyane, "Ubuntu", Light;
+			color: black;
+			font-size: 16px;
+			text-transform: uppercase;
+			line-height: 40px;
+			letter-spacing: 3px;
+			display: block;
+			text-align: right;
+			&:before{
+			    content: '';
+			    background: url(../_images/icons/cartadd.png) no-repeat;
+			    background-size: contain;
+			    background-position: right;
+			    height: 40px;
+			    width: 40px;
+			    position: absolute;
+			    top: 0px;
+			    margin-left: -55px;
 
+				
+			}
+		}
+	}
 
 	.nav{
 		text-align: center;
@@ -53,7 +81,7 @@
 				margin-bottom: 0;
 				min-width: 0;
 				width: auto;
-				margin-right: 10px;
+				margin-right: 5px;
 
 				&:last-of-type{
 					margin-right: 0;
@@ -88,6 +116,10 @@
 		&:last-of-type{
 			margin-right: 0;
 		}
+	}
+
+	.visi{
+		visibility: hidden;
 	}
 
 	.mr{
